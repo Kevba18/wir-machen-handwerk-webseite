@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt – Zusammenarbeit anfragen | Wir machen Handwerk</title>
+  <meta name="description" content="Nehmen Sie Kontakt zu Wir machen Handwerk auf. Anfragen für Hausverwaltungen, Versicherungen, gewerbliche Auftraggeber und Handwerkspartner.">
+  <link rel="canonical" href="https://www.wir-machen-handwerk.de/kontakt/">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<nav class="nav" role="navigation" aria-label="Hauptnavigation">
+  <div class="container nav__inner">
+    <a href="/" class="nav__logo" aria-label="Wir machen Handwerk – zur Startseite">
+      <svg class="nav__logo-icon" viewBox="0 0 42 42" fill="none" aria-hidden="true"><rect width="42" height="42" rx="6" fill="#1A3F6F"/><polygon points="21,7 36,19 33,19 33,35 9,35 9,19 6,19" fill="white" opacity="0.9"/><rect x="15" y="24" width="12" height="7" rx="1.5" fill="#F07800"/><rect x="19" y="22" width="4" height="3" rx="1" fill="#F07800"/></svg>
+      <span class="nav__logo-text"><span class="nav__logo-top">Wir-Machen</span><span class="nav__logo-bot">Handwerk.de</span></span>
+    </a>
+    <ul class="nav__links" role="list">
+      <li><a href="/">Start</a></li>
+      <li><a href="/digitales-portal/">Digitales Portal</a></li>
+      <li class="nav__dropdown">
+        <span class="nav__dropdown-toggle" tabindex="0">Für wen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></span>
+        <ul class="nav__dropdown-menu" role="list">
+          <li><a href="/fuer-hausverwaltungen/">Hausverwaltungen</a></li>
+          <li><a href="/fuer-versicherungen/">Versicherungen</a></li>
+          <li><a href="/fuer-sachverstaendige/">Sachverständige</a></li>
+          <li><a href="/fuer-handwerker/">Handwerker</a></li>
+        </ul>
+      </li>
+      <li><a href="/leistungen/">Leistungen</a></li>
+      <li><a href="/kontakt/" class="active">Kontakt</a></li>
+    </ul>
+    <div class="nav__actions">
+      <a href="/schadensmeldung/" class="btn btn--orange btn--sm">Schadensfall melden</a>
+      <a href="https://portal.wir-machen-handwerk.de" class="nav__login" target="_blank" rel="noopener">Portal Login</a>
+    </div>
+    <button class="nav__toggle" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<nav class="nav__mobile" aria-label="Mobile Navigation">
+  <a href="/">Start</a><a href="/digitales-portal/">Digitales Portal</a>
+  <span class="nav__mobile-label">Für wen</span>
+  <a href="/fuer-hausverwaltungen/">Hausverwaltungen</a><a href="/fuer-versicherungen/">Versicherungen</a>
+  <a href="/fuer-sachverstaendige/">Sachverständige</a><a href="/fuer-handwerker/">Handwerker</a>
+  <a href="/leistungen/">Leistungen</a><a href="/kontakt/">Kontakt</a>
+  <a href="/schadensmeldung/" class="btn btn--orange">Schadensfall melden</a>
+  <a href="https://portal.wir-machen-handwerk.de" target="_blank" rel="noopener" style="text-align:center;color:var(--mid);font-size:0.875rem;border-bottom:none;margin-top:0.5rem;">Portal Login →</a>
+</nav>
+
+<main id="main">
+<header class="page-header" aria-labelledby="page-headline">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Start</a><span aria-hidden="true">›</span><span aria-current="page">Kontakt</span></nav>
+    <h1 id="page-headline">Zusammenarbeit <span>anfragen</span></h1>
+    <p class="lead lead--white">Sie möchten mit uns zusammenarbeiten, haben Fragen zu unseren Leistungen oder möchten als Handwerkspartner tätig werden? Schreiben Sie uns.</p>
+  </div>
+</header>
+
+<section class="section" aria-labelledby="kontakt-headline">
+  <div class="container">
+    <div class="two-col two-col--wide">
+      <div>
+        <span class="section-label">Kontaktformular</span>
+        <h2 id="kontakt-headline">Ihre Anfrage</h2>
+        <p class="lead mt-2" style="margin-bottom:2rem;">Teilen Sie uns kurz mit, wer Sie sind und was Sie von uns benötigen. Wir melden uns zeitnah bei Ihnen.</p>
+
+        <form class="form" action="#" method="post" novalidate aria-label="Kontaktformular">
+          <div class="form-group">
+            <label for="anfrage-typ">Ich bin*</label>
+            <select id="anfrage-typ" name="anfrage_typ" required>
+              <option value="">Bitte auswählen</option>
+              <option value="hausverwaltung">Hausverwaltung</option>
+              <option value="versicherung">Versicherung</option>
+              <option value="sachverstaendiger">Sachverständige/r</option>
+              <option value="gewerblich">Gewerblicher Auftraggeber</option>
+              <option value="handwerker">Handwerksbetrieb (Partner-Anfrage)</option>
+              <option value="sonstiges">Sonstiges</option>
+            </select>
+          </div>
+
+          <div class="form-group form-group--2">
+            <div>
+              <label for="vorname">Vorname*</label>
+              <input type="text" id="vorname" name="vorname" required autocomplete="given-name" placeholder="Max">
+            </div>
+            <div>
+              <label for="nachname">Nachname*</label>
+              <input type="text" id="nachname" name="nachname" required autocomplete="family-name" placeholder="Mustermann">
+            </div>
+          </div>
+
+          <div class="form-group form-group--2">
+            <div>
+              <label for="unternehmen">Unternehmen / Organisation</label>
+              <input type="text" id="unternehmen" name="unternehmen" autocomplete="organization" placeholder="Muster GmbH">
+            </div>
+            <div>
+              <label for="telefon">Telefon</label>
+              <input type="tel" id="telefon" name="telefon" autocomplete="tel" placeholder="+49 201 123456">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-Mail*</label>
+            <input type="email" id="email" name="email" required autocomplete="email" placeholder="max@muster.de">
+          </div>
+
+          <div class="form-group">
+            <label for="betreff">Betreff</label>
+            <input type="text" id="betreff" name="betreff" placeholder="Worum geht es?">
+          </div>
+
+          <div class="form-group">
+            <label for="nachricht">Ihre Nachricht*</label>
+            <textarea id="nachricht" name="nachricht" required placeholder="Beschreiben Sie kurz, was Sie benötigen oder worüber Sie sprechen möchten."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label style="display:flex;align-items:flex-start;gap:0.75rem;font-weight:400;cursor:pointer;">
+              <input type="checkbox" name="datenschutz" required style="width:auto;margin-top:0.2rem;flex-shrink:0;">
+              <span style="font-size:0.875rem;color:var(--mid);">Ich habe die <a href="/datenschutz/" style="color:var(--blue);">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu.*</span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn--orange btn--lg">Anfrage absenden</button>
+          <p class="form-hint mt-2">* Pflichtfelder. Wir antworten in der Regel innerhalb von 1–2 Werktagen.</p>
+        </form>
+      </div>
+
+      <aside aria-label="Kontaktdaten">
+        <div style="position:sticky;top:100px;display:grid;gap:1.5rem;">
+          <div class="card card--blue">
+            <h3>Schadensfall?</h3>
+            <p style="margin-top:0.75rem;">Wenn Sie einen konkreten Schaden melden möchten, nutzen Sie bitte unser spezialisiertes Schadensmeldungsformular.</p>
+            <a href="/schadensmeldung/" class="btn btn--orange" style="margin-top:1rem;">Schadensfall melden</a>
+          </div>
+
+          <div class="card">
+            <h3>Direkter Kontakt</h3>
+            <div class="icon-list mt-2">
+              <div class="icon-list__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5 19.79 19.79 0 0 1 1.61 4.9 2 2 0 0 1 3.6 2.69h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.6a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.46 18z"/></svg>
+                <span>Telefon: <a href="tel:+4920112345678" style="color:var(--blue);">+49 201 123 456 78</a></span>
+              </div>
+              <div class="icon-list__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <span>E-Mail: <a href="mailto:info@wir-machen-handwerk.de" style="color:var(--blue);">info@wir-machen-handwerk.de</a></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Bereits Partner?</h3>
+            <p style="margin-top:0.5rem;font-size:0.9375rem;color:var(--mid);">Wenn Sie bereits Zugang zum WMH Portal haben, loggen Sie sich dort direkt ein.</p>
+            <a href="https://portal.wir-machen-handwerk.de" class="btn btn--outline-blue btn--sm" style="margin-top:1rem;" target="_blank" rel="noopener">Portal Login</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <div class="footer__logo"><svg width="36" height="36" viewBox="0 0 42 42" fill="none" aria-hidden="true"><rect width="42" height="42" rx="6" fill="#1A3F6F"/><polygon points="21,7 36,19 33,19 33,35 9,35 9,19 6,19" fill="white" opacity="0.9"/><rect x="15" y="24" width="12" height="7" rx="1.5" fill="#F07800"/><rect x="19" y="22" width="4" height="3" rx="1" fill="#F07800"/></svg>
+          <span class="footer__logo-text"><span class="footer__logo-top">Wir-Machen</span><span class="footer__logo-bot">Handwerk.de</span></span>
+        </div>
+        <p>Generalunternehmen für Schadensfälle, Instandhaltung und Sanierung.</p>
+        <a href="https://portal.wir-machen-handwerk.de" target="_blank" rel="noopener" class="btn btn--outline btn--sm">Portal Login</a>
+      </div>
+      <div><p class="footer__heading">Leistungen</p><ul class="footer__links"><li><a href="/leistungen/">Leistungsübersicht</a></li><li><a href="/schadensregulierung-im-versicherungsfall/">Schadensregulierung</a></li><li><a href="/malerarbeiten/">Malerarbeiten</a></li></ul></div>
+      <div><p class="footer__heading">Für wen</p><ul class="footer__links"><li><a href="/fuer-hausverwaltungen/">Hausverwaltungen</a></li><li><a href="/fuer-versicherungen/">Versicherungen</a></li><li><a href="/fuer-sachverstaendige/">Sachverständige</a></li><li><a href="/fuer-handwerker/">Handwerker</a></li></ul></div>
+      <div><p class="footer__heading">Unternehmen</p><ul class="footer__links"><li><a href="/digitales-portal/">Digitales Portal</a></li><li><a href="/schadensmeldung/">Schadensfall melden</a></li><li><a href="/kontakt/">Kontakt</a></li><li><a href="/impressum/">Impressum</a></li></ul></div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2024 Wir machen Handwerk. Alle Rechte vorbehalten.</p>
+      <nav class="footer__legal" aria-label="Rechtliche Links"><a href="/impressum/">Impressum</a><a href="/datenschutz/">Datenschutz</a></nav>
+    </div>
+  </div>
+</footer>
+<script src="/js/main.js" defer></script>
+</body>
+</html>
