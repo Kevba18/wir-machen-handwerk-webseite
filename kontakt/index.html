@@ -63,7 +63,11 @@
         <h2 id="kontakt-headline">Ihre Anfrage</h2>
         <p class="lead mt-2" style="margin-bottom:2rem;">Teilen Sie uns kurz mit, wer Sie sind und was Sie von uns benötigen. Wir melden uns zeitnah bei Ihnen.</p>
 
-        <form class="form" action="#" method="post" novalidate aria-label="Kontaktformular">
+        <form class="form" name="kontaktaufnahme" method="post" data-netlify="true" netlify-honeypot="bot-field" action="/kontakt/" novalidate aria-label="Kontaktformular">
+          <input type="hidden" name="form-name" value="kontaktaufnahme">
+          <p class="is-hidden" aria-hidden="true">
+            <label>Bitte nicht ausfüllen: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+          </p>
           <div class="form-group">
             <label for="anfrage-typ">Ich bin*</label>
             <select id="anfrage-typ" name="anfrage_typ" required>
@@ -164,7 +168,7 @@
   <div class="container">
     <div class="footer__grid">
       <div class="footer__brand">
-        <div class="footer__logo"><img src="/logo/wir-machen-handwerk%20logo%20farbe.svg" alt="Wir machen Handwerk" class="site-logo site-logo--footer"></div>
+        <div class="footer__logo"><img src="/logo/wir-machen-handwerk%20logo%20farbe%20wei%C3%9F.svg" alt="Wir machen Handwerk" class="site-logo site-logo--footer"></div>
         <p>Generalunternehmen für Schadensfälle, Instandhaltung und Sanierung.</p>
         <a href="https://portal.wir-machen-handwerk.de" target="_blank" rel="noopener" class="btn btn--outline btn--sm">Portal Login</a>
       </div>
