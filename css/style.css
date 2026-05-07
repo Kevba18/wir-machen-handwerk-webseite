@@ -605,7 +605,19 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-display); font-weight: 800; line-hei
 .portal-section__bg-grid { position:absolute; inset:0; background-image: linear-gradient(rgba(255,255,255,0.022) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.022) 1px, transparent 1px); background-size:44px 44px; }
 .portal-section__inner { position:relative; z-index:2; }
 .portal-section__grid  { display:grid; grid-template-columns:1fr 1.25fr; gap:5rem; align-items:center; }
-.portal-section__sub { margin-bottom: 2rem; }
+.portal-section__grid > div:first-child { max-width:560px; }
+.portal-section .section-label,
+.portal-section .section__label { color:var(--orange); margin-bottom:1.1rem; }
+.portal-section h2,
+.portal-section .section__title { color:var(--on-dark); margin-bottom:clamp(1.25rem,2vw,1.65rem); }
+.portal-section .lead,
+.portal-section .section__sub,
+.portal-section__sub {
+  color:var(--on-dark-body);
+  max-width:560px;
+  line-height:1.78;
+  margin-bottom:2.4rem;
+}
 
 .portal-feature-list { display:flex; flex-direction:column; gap:1.5rem; }
 .portal-feature-item { display:flex; gap:1rem; align-items:flex-start; padding:1rem; border:1px solid rgba(255,255,255,0.08); border-radius:var(--radius-lg); background:rgba(255,255,255,0.035); transition:background var(--transition),transform var(--transition),border-color var(--transition); }
@@ -750,19 +762,24 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-display); font-weight: 800; line-hei
 /* =========================================
    15. CTA BANNER
    ========================================= */
-.cta-banner { position:relative; overflow:hidden; background:var(--blue); padding:clamp(4rem,7vw,7rem) 0; }
+.cta-banner { position:relative; overflow:hidden; background:var(--blue); padding:clamp(5rem,8vw,8rem) 0; }
 .cta-banner::before { content:''; position:absolute; inset:0; background: radial-gradient(ellipse 50% 80% at 15% 50%, rgba(240,120,0,0.16) 0%, transparent 65%), radial-gradient(ellipse 50% 80% at 85% 50%, rgba(10,30,70,0.64) 0%, transparent 65%), linear-gradient(140deg, #091928 0%, #1A3F6F 74%, #0f2540 100%); }
 .cta-banner::after { content:''; position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,0.024) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.024) 1px, transparent 1px); background-size:44px 44px; pointer-events:none; }
-.cta-banner .container { position:relative; z-index:2; text-align:center; }
-.cta-banner__label { display:inline-block; font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.14em; color:var(--orange); margin-bottom:1rem; }
-.cta-banner__title { font-family:var(--font-display); font-size:clamp(2rem,4vw,3.5rem); font-weight:900; text-transform:uppercase; color:var(--white); line-height:1.04; margin-bottom:1.25rem; }
-.cta-banner__text  { font-size:1.1rem; color:var(--on-dark-body); margin-bottom:2.5rem; max-width:520px; margin-left:auto; margin-right:auto; line-height:1.7; }
-.cta-banner__actions { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }
+.cta-banner .container { position:relative; z-index:2; text-align:center; max-width:860px; }
+.cta-banner__label { display:inline-block; font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.14em; color:var(--orange); margin-bottom:1.15rem; }
+.cta-banner__title { font-family:var(--font-display); font-size:clamp(2rem,4vw,3.5rem); font-weight:900; text-transform:uppercase; color:var(--white); line-height:1.04; margin-bottom:1.6rem; }
+.cta-banner__text  { font-size:1.1rem; color:var(--on-dark-body); margin-bottom:3rem; max-width:560px; margin-left:auto; margin-right:auto; line-height:1.75; }
+.cta-banner__actions { display:flex; gap:1rem; justify-content:center; align-items:center; flex-wrap:wrap; }
 .cta-banner h1,
 .cta-banner h2,
-.cta-banner h3 { color:var(--on-dark); }
+.cta-banner h3 { color:var(--on-dark); margin-bottom:1.6rem; }
 .cta-banner p,
-.cta-banner .lead { color:var(--on-dark-body); }
+.cta-banner .lead {
+  color:var(--on-dark-body);
+  max-width:560px;
+  margin:0 auto 3rem;
+  line-height:1.75;
+}
 .cta-banner a:not(.btn) { color:var(--on-dark-link); }
 
 /* =========================================
