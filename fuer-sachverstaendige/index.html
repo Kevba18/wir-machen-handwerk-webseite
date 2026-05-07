@@ -44,7 +44,7 @@
   <a href="/fuer-sachverstaendige/">Sachverständige</a><a href="/fuer-handwerker/">Handwerker</a>
   <a href="/leistungen/">Leistungen</a><a href="/kontakt/">Kontakt</a>
   <a href="/schadensmeldung/" class="btn btn--orange">Schadensfall melden</a>
-  <a href="https://portal.wir-machen-handwerk.de" target="_blank" rel="noopener" style="text-align:center;color:var(--mid);font-size:0.875rem;border-bottom:none;margin-top:0.5rem;">Portal Login →</a>
+  <a href="https://portal.wir-machen-handwerk.de" target="_blank" rel="noopener" class="nav__mobile-login">Portal Login →</a>
 </nav>
 
 <main id="main">
@@ -56,77 +56,100 @@
   </div>
 </header>
 
+<!-- Was wir für Sachverständige leisten -->
 <section class="section" aria-labelledby="leistungen-headline">
   <div class="container">
-    <div class="section__header">
+    <div class="section__header animate">
       <span class="section-label">Was wir für Sachverständige leisten</span>
       <h2 id="leistungen-headline">Strukturierte Grundlage für jede Begutachtung</h2>
-      <p class="lead">Damit Sachverständige sich auf das Wesentliche konzentrieren können, bereiten wir alle relevanten Informationen vor und stellen sie strukturiert bereit.</p>
+      <p class="section__sub">Damit Sachverständige sich auf das Wesentliche konzentrieren können, bereiten wir alle relevanten Informationen vor und stellen sie strukturiert bereit.</p>
     </div>
-    <div class="features features--2" role="list">
-      <div class="feature" role="listitem">
-        <div class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
-        <div class="feature__text">
-          <strong>Vollständige Vorab-Dokumentation</strong>
-          <span>Fotos, Schadensbeschreibungen und Fallhistorie werden vor der Begutachtung strukturiert bereitgestellt.</span>
+    <div class="benefit-grid">
+      <article class="benefit-card animate animate--delay-1">
+        <div class="benefit-card__icon benefit-card__icon--blue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
         </div>
-      </div>
-      <div class="feature" role="listitem">
-        <div class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
-        <div class="feature__text">
-          <strong>Koordinierter Objektzugang</strong>
-          <span>Wir stimmen Termine mit Eigentümern, Hausverwaltungen und Mietern ab – ohne Mehraufwand für den Sachverständigen.</span>
+        <h3 class="benefit-card__title">Vollständige Vorab-Dokumentation</h3>
+        <p class="benefit-card__text">Fotos, Schadensbeschreibungen und Fallhistorie werden vor der Begutachtung strukturiert bereitgestellt – kein Zeitverlust durch fehlende Unterlagen.</p>
+      </article>
+      <article class="benefit-card animate animate--delay-2">
+        <div class="benefit-card__icon benefit-card__icon--orange">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
         </div>
-      </div>
-      <div class="feature" role="listitem">
-        <div class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
-        <div class="feature__text">
-          <strong>Statusverfolgung im Portal</strong>
-          <span>Bearbeitungsstände sind im WMH Portal jederzeit nachvollziehbar – für alle Beteiligten transparent.</span>
+        <h3 class="benefit-card__title">Koordinierter Objektzugang</h3>
+        <p class="benefit-card__text">Wir stimmen Termine mit Eigentümern, Hausverwaltungen und Mietern ab – ohne Mehraufwand für den Sachverständigen.</p>
+      </article>
+      <article class="benefit-card animate animate--delay-3">
+        <div class="benefit-card__icon benefit-card__icon--gray">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
         </div>
-      </div>
-      <div class="feature" role="listitem">
-        <div class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-        <div class="feature__text">
-          <strong>DSGVO-konforme Dokumentablage</strong>
-          <span>Alle Gutachtenunterlagen werden sicher und protokolliert im Portal abgelegt.</span>
+        <h3 class="benefit-card__title">Statusverfolgung im Portal</h3>
+        <p class="benefit-card__text">Bearbeitungsstände sind im WMH Portal jederzeit nachvollziehbar – für alle Beteiligten transparent und ohne Rückfragen.</p>
+      </article>
+      <article class="benefit-card animate animate--delay-1">
+        <div class="benefit-card__icon benefit-card__icon--blue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
-      </div>
-      <div class="feature" role="listitem">
-        <div class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-        <div class="feature__text">
-          <strong>Direkter Ansprechpartner</strong>
-          <span>Kein Durchstellen, keine Zuständigkeitsprobleme. Sie haben immer einen festen Ansprechpartner bei Wir machen Handwerk.</span>
+        <h3 class="benefit-card__title">DSGVO-konforme Dokumentablage</h3>
+        <p class="benefit-card__text">Alle Gutachtenunterlagen werden sicher und lückenlos protokolliert im Portal abgelegt – DSGVO-konform mit vollständiger Änderungshistorie.</p>
+      </article>
+      <article class="benefit-card animate animate--delay-2">
+        <div class="benefit-card__icon benefit-card__icon--orange">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
         </div>
-      </div>
-      <div class="feature" role="listitem">
-        <div class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
-        <div class="feature__text">
-          <strong>Umsetzungskoordination nach Gutachten</strong>
-          <span>Nach Abschluss der Begutachtung übernehmen wir die Koordination der beauftragten Maßnahmen.</span>
+        <h3 class="benefit-card__title">Direkter Ansprechpartner</h3>
+        <p class="benefit-card__text">Kein Durchstellen, keine Zuständigkeitsprobleme. Sie haben immer einen festen Ansprechpartner bei Wir machen Handwerk.</p>
+      </article>
+      <article class="benefit-card animate animate--delay-3">
+        <div class="benefit-card__icon benefit-card__icon--gray">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
         </div>
-      </div>
+        <h3 class="benefit-card__title">Umsetzungskoordination nach Gutachten</h3>
+        <p class="benefit-card__text">Nach Abschluss der Begutachtung übernehmen wir die Koordination der beauftragten Maßnahmen – komplett und ohne weiteren Aufwand für Sie.</p>
+      </article>
     </div>
   </div>
 </section>
 
+<!-- Ablauf Zusammenarbeit -->
 <section class="section section--gray" aria-labelledby="ablauf-headline">
-  <div class="container" style="max-width:700px">
-    <div class="section__header section__header--center">
+  <div class="container">
+    <div class="section__header section__header--center animate">
       <span class="section-label">Zusammenarbeit</span>
       <h2 id="ablauf-headline">So arbeiten wir mit Sachverständigen zusammen</h2>
+      <p class="section__sub">Klare Abläufe, vollständige Unterlagen, ein fester Ansprechpartner.</p>
     </div>
-    <div class="steps" role="list">
-      <div class="step" role="listitem"><div class="step__number" aria-hidden="true">01</div><h3>Abstimmung und Terminplanung</h3><p>Wir koordinieren den Begutachtungstermin mit allen Beteiligten und stellen alle relevanten Vorinformationen bereit.</p></div>
-      <div class="step" role="listitem"><div class="step__number" aria-hidden="true">02</div><h3>Übergabe der Fallunterlagen</h3><p>Fotos, Schadensbeschreibungen und Fallhistorie werden strukturiert im Portal bereitgestellt oder direkt übermittelt.</p></div>
-      <div class="step" role="listitem"><div class="step__number" aria-hidden="true">03</div><h3>Begutachtung vor Ort</h3><p>Der Sachverständige führt die Begutachtung durch – wir koordinieren den Zugang und stehen bei Rückfragen zur Verfügung.</p></div>
-      <div class="step" role="listitem"><div class="step__number" aria-hidden="true">04</div><h3>Dokumentablage und Weiterleitung</h3><p>Das Gutachten wird im Portal hinterlegt und an die relevanten Stellen (Versicherung, Hausverwaltung) weitergeleitet.</p></div>
-      <div class="step" role="listitem"><div class="step__number" aria-hidden="true">05</div><h3>Umsetzung der Maßnahmen</h3><p>Auf Basis des Gutachtens koordinieren wir die notwendigen Handwerksarbeiten und dokumentieren die Ausführung.</p></div>
+    <div class="process-grid">
+      <div class="process-step animate animate--delay-1">
+        <div class="process-step__num">01</div>
+        <h3 class="process-step__title">Abstimmung &amp; Terminplanung</h3>
+        <p class="process-step__text">Wir koordinieren den Begutachtungstermin mit allen Beteiligten und stellen alle relevanten Vorinformationen bereit.</p>
+      </div>
+      <div class="process-step animate animate--delay-2">
+        <div class="process-step__num">02</div>
+        <h3 class="process-step__title">Übergabe der Fallunterlagen</h3>
+        <p class="process-step__text">Fotos, Schadensbeschreibungen und Fallhistorie werden strukturiert im Portal bereitgestellt oder direkt übermittelt.</p>
+      </div>
+      <div class="process-step animate animate--delay-3">
+        <div class="process-step__num">03</div>
+        <h3 class="process-step__title">Begutachtung vor Ort</h3>
+        <p class="process-step__text">Der Sachverständige führt die Begutachtung durch – wir koordinieren den Zugang und stehen bei Rückfragen zur Verfügung.</p>
+      </div>
+      <div class="process-step animate animate--delay-4">
+        <div class="process-step__num">04</div>
+        <h3 class="process-step__title">Dokumentablage &amp; Weiterleitung</h3>
+        <p class="process-step__text">Das Gutachten wird im Portal hinterlegt und an die relevanten Stellen (Versicherung, Hausverwaltung) weitergeleitet.</p>
+      </div>
+      <div class="process-step animate animate--delay-5">
+        <div class="process-step__num">05</div>
+        <h3 class="process-step__title">Umsetzung der Maßnahmen</h3>
+        <p class="process-step__text">Auf Basis des Gutachtens koordinieren wir die notwendigen Handwerksarbeiten und dokumentieren die Ausführung vollständig.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="cta-banner" aria-labelledby="cta-headline">
+<section class="cta-banner animate" aria-labelledby="cta-headline">
   <div class="container">
     <h2 id="cta-headline">Zusammenarbeit mit Sachverständigen</h2>
     <p class="lead lead--white">Nehmen Sie Kontakt auf – wir klären gemeinsam, wie eine strukturierte Zusammenarbeit für Ihre Tätigkeit aussehen kann.</p>

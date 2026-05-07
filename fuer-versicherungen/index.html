@@ -44,7 +44,7 @@
   <a href="/fuer-sachverstaendige/">Sachverständige</a><a href="/fuer-handwerker/">Handwerker</a>
   <a href="/leistungen/">Leistungen</a><a href="/kontakt/">Kontakt</a>
   <a href="/schadensmeldung/" class="btn btn--orange">Schadensfall melden</a>
-  <a href="https://portal.wir-machen-handwerk.de" target="_blank" rel="noopener" style="text-align:center;color:var(--mid);font-size:0.875rem;border-bottom:none;margin-top:0.5rem;">Portal Login →</a>
+  <a href="https://portal.wir-machen-handwerk.de" target="_blank" rel="noopener" class="nav__mobile-login">Portal Login →</a>
 </nav>
 
 <main id="main">
@@ -56,71 +56,131 @@
   </div>
 </header>
 
+<!-- Stats bar -->
+<div class="stats-bar animate-fade">
+  <div class="container">
+    <div class="stats-bar__grid">
+      <div class="stats-bar__item">
+        <div class="stats-bar__num">100%</div>
+        <div class="stats-bar__label">Digitale Fallakte</div>
+      </div>
+      <div class="stats-bar__item">
+        <div class="stats-bar__num">DSGVO</div>
+        <div class="stats-bar__label">Konforme Protokollierung</div>
+      </div>
+      <div class="stats-bar__item">
+        <div class="stats-bar__num">0</div>
+        <div class="stats-bar__label">Medienbrüche im Prozess</div>
+      </div>
+      <div class="stats-bar__item">
+        <div class="stats-bar__num">1</div>
+        <div class="stats-bar__label">Ansprechpartner für alles</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Leistungen für Versicherungen -->
 <section class="section" aria-labelledby="vorteile-headline">
   <div class="container">
-    <div class="section__header">
+    <div class="section__header animate">
       <span class="section-label">Was wir für Versicherungen leisten</span>
       <h2 id="vorteile-headline">Strukturierte Abwicklung – von Anfang bis Ende</h2>
-      <p class="lead">Versicherungsschäden erfordern präzise Dokumentation, nachvollziehbare Abläufe und zuverlässige Ausführung. Wir liefern beides – koordiniert und digital erfasst.</p>
+      <p class="section__sub">Versicherungsschäden erfordern präzise Dokumentation, nachvollziehbare Abläufe und zuverlässige Ausführung. Wir liefern alles – koordiniert und digital erfasst.</p>
     </div>
-    <div class="cards cards--3" role="list">
-      <article class="card" role="listitem">
-        <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
-        <h3>Lückenlose Dokumentation</h3>
-        <p>Fotos, Schadensbeschreibungen, Kostenaufstellungen und Abschlussberichte werden strukturiert im Portal abgelegt und sind jederzeit abrufbar.</p>
+    <div class="benefit-grid">
+      <article class="benefit-card animate animate--delay-1">
+        <div class="benefit-card__icon benefit-card__icon--blue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <h3 class="benefit-card__title">Lückenlose Dokumentation</h3>
+        <p class="benefit-card__text">Fotos, Schadensbeschreibungen, Kostenaufstellungen und Abschlussberichte werden strukturiert im Portal abgelegt und sind jederzeit abrufbar.</p>
       </article>
-      <article class="card" role="listitem">
-        <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
-        <h3>Nachvollziehbare Bearbeitungsstände</h3>
-        <p>Bearbeitungsstände sind jederzeit im Portal einsehbar – kein Nachfragen, kein Warten auf Berichte per E-Mail.</p>
+      <article class="benefit-card animate animate--delay-2">
+        <div class="benefit-card__icon benefit-card__icon--orange">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3 class="benefit-card__title">Nachvollziehbare Bearbeitungsstände</h3>
+        <p class="benefit-card__text">Bearbeitungsstände sind jederzeit im Portal einsehbar – kein Nachfragen, kein Warten auf Berichte per E-Mail.</p>
       </article>
-      <article class="card" role="listitem">
-        <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-        <h3>DSGVO-konforme Verarbeitung</h3>
-        <p>Alle Daten werden DSGVO-konform verarbeitet und protokolliert. Lückenlose Änderungshistorie für jede Fallakte.</p>
+      <article class="benefit-card animate animate--delay-3">
+        <div class="benefit-card__icon benefit-card__icon--gray">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3 class="benefit-card__title">DSGVO-konforme Verarbeitung</h3>
+        <p class="benefit-card__text">Alle Daten werden DSGVO-konform verarbeitet und protokolliert. Lückenlose Änderungshistorie für jede Fallakte.</p>
       </article>
-      <article class="card" role="listitem">
-        <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
-        <h3>Geprüfte Handwerkspartner</h3>
-        <p>Wir setzen ausschließlich geprüfte Fachbetriebe ein – mit Bewertungssystem für Qualität, Pünktlichkeit und Zuverlässigkeit.</p>
+      <article class="benefit-card animate animate--delay-1">
+        <div class="benefit-card__icon benefit-card__icon--blue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+        </div>
+        <h3 class="benefit-card__title">Geprüfte Handwerkspartner</h3>
+        <p class="benefit-card__text">Wir setzen ausschließlich geprüfte Fachbetriebe ein – mit Bewertungssystem für Qualität, Pünktlichkeit und Zuverlässigkeit.</p>
       </article>
-      <article class="card" role="listitem">
-        <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
-        <h3>Digitale Signatur &amp; Freigaben</h3>
-        <p>Angebote und Freigaben werden digital signiert – ohne Papierkram, mit rechtssicherer Dokumentation.</p>
+      <article class="benefit-card animate animate--delay-2">
+        <div class="benefit-card__icon benefit-card__icon--orange">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <h3 class="benefit-card__title">Digitale Signatur &amp; Freigaben</h3>
+        <p class="benefit-card__text">Angebote und Freigaben werden digital signiert – ohne Papierkram, mit rechtssicherer Dokumentation.</p>
       </article>
-      <article class="card" role="listitem">
-        <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/></svg></div>
-        <h3>Koordination mit Sachverständigen</h3>
-        <p>Wir stimmen uns bei Bedarf mit Sachverständigen ab und liefern die notwendigen Unterlagen für Gutachten und Regulierung.</p>
+      <article class="benefit-card animate animate--delay-3">
+        <div class="benefit-card__icon benefit-card__icon--gray">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/></svg>
+        </div>
+        <h3 class="benefit-card__title">Koordination mit Sachverständigen</h3>
+        <p class="benefit-card__text">Wir stimmen uns bei Bedarf mit Sachverständigen ab und liefern die notwendigen Unterlagen für Gutachten und Regulierung.</p>
       </article>
     </div>
   </div>
 </section>
 
+<!-- Ablauf / Process -->
 <section class="section section--gray" aria-labelledby="ablauf-headline">
   <div class="container">
-    <div class="section__header section__header--center">
+    <div class="section__header section__header--center animate">
       <span class="section-label">Ablauf</span>
       <h2 id="ablauf-headline">So läuft die Schadensabwicklung ab</h2>
+      <p class="section__sub">Strukturiert, digital, nachvollziehbar – von der Erstmeldung bis zum Abschlussbericht.</p>
     </div>
-    <div class="steps" style="max-width:700px;margin:0 auto" role="list">
-      <div class="step" role="listitem"><div class="step__number" aria-hidden="true">01</div><h3>Schadensmeldung</h3><p>Der Schaden wird über unsere Schadensmeldung oder direkt über das Portal erfasst – mit allen relevanten Angaben.</p></div>
-      <div class="step" role="listitem"><div class="step__number" aria-hidden="true">02</div><h3>Begutachtung und Dokumentation</h3><p>Wir koordinieren die Begutachtung, erfassen Fotos und dokumentieren den Schadensumfang strukturiert im Portal.</p></div>
-      <div class="step" role="listitem"><div class="step__number" aria-hidden="true">03</div><h3>Angebot und Freigabe</h3><p>Ein strukturiertes Angebot wird erstellt und kann digital freigegeben werden – ohne Medienbruch.</p></div>
-      <div class="step" role="listitem"><div class="step__number" aria-hidden="true">04</div><h3>Koordinierte Ausführung</h3><p>Geprüfte Handwerkspartner führen die Arbeiten aus. Fortschritt und Dokumentation laufen parallel im Portal.</p></div>
-      <div class="step" role="listitem"><div class="step__number" aria-hidden="true">05</div><h3>Abschlussbericht und Nachweise</h3><p>Nach Abschluss erhalten Sie alle Unterlagen strukturiert – für die Regulierung vollständig aufbereitet.</p></div>
+    <div class="process-grid">
+      <div class="process-step animate animate--delay-1">
+        <div class="process-step__num">01</div>
+        <h3 class="process-step__title">Schadensmeldung</h3>
+        <p class="process-step__text">Der Schaden wird über unsere Schadensmeldung oder direkt über das Portal erfasst – mit allen relevanten Angaben.</p>
+      </div>
+      <div class="process-step animate animate--delay-2">
+        <div class="process-step__num">02</div>
+        <h3 class="process-step__title">Begutachtung &amp; Dokumentation</h3>
+        <p class="process-step__text">Wir koordinieren die Begutachtung, erfassen Fotos und dokumentieren den Schadensumfang strukturiert im Portal.</p>
+      </div>
+      <div class="process-step animate animate--delay-3">
+        <div class="process-step__num">03</div>
+        <h3 class="process-step__title">Angebot &amp; Freigabe</h3>
+        <p class="process-step__text">Ein strukturiertes Angebot wird erstellt und kann digital freigegeben werden – ohne Medienbruch.</p>
+      </div>
+      <div class="process-step animate animate--delay-4">
+        <div class="process-step__num">04</div>
+        <h3 class="process-step__title">Koordinierte Ausführung</h3>
+        <p class="process-step__text">Geprüfte Handwerkspartner führen die Arbeiten aus. Fortschritt und Dokumentation laufen parallel im Portal.</p>
+      </div>
+      <div class="process-step animate animate--delay-5">
+        <div class="process-step__num">05</div>
+        <h3 class="process-step__title">Abschlussbericht</h3>
+        <p class="process-step__text">Nach Abschluss erhalten Sie alle Unterlagen strukturiert – für die Regulierung vollständig aufbereitet.</p>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- FAQ -->
 <section class="section" aria-labelledby="faq-headline">
-  <div class="container" style="max-width:800px">
-    <div class="section__header section__header--center">
+  <div class="container container--narrow">
+    <div class="section__header section__header--center animate">
       <span class="section-label">Häufige Fragen</span>
       <h2 id="faq-headline">Fragen von Versicherungen</h2>
     </div>
-    <div class="faq" role="list">
+    <div class="faq animate" role="list">
       <div class="faq__item" role="listitem">
         <button class="faq__question" aria-expanded="false">Welche Unterlagen liefern Sie für die Schadensregulierung?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
         <div class="faq__answer"><p>Wir liefern strukturierte Schadensdokumentationen mit Fotos (Vorher/Nachher), Schadensbeschreibungen, Angeboten, Ausführungsberichten und Abschlussunterlagen – alles im Portal abgelegt und abrufbar.</p></div>
@@ -141,7 +201,7 @@
   </div>
 </section>
 
-<section class="cta-banner" aria-labelledby="cta-headline">
+<section class="cta-banner animate" aria-labelledby="cta-headline">
   <div class="container">
     <h2 id="cta-headline">Strukturierte Schadensabwicklung – gemeinsam</h2>
     <p class="lead lead--white">Sprechen Sie uns an. Wir erläutern Ihnen unsere Arbeitsweise und klären, wie eine Zusammenarbeit für Ihre Schadensabwicklung aussehen kann.</p>

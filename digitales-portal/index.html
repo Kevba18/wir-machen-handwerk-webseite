@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digitales WMH Portal – Strukturierte Handwerksabwicklung | Wir machen Handwerk</title>
-  <meta name="description" content="Das WMH Portal digitalisiert die Abwicklung von Schadensfällen, Reparaturen und Sanierungen. Für Hausverwaltungen, Versicherungen, Handwerker und interne Teams. Zugang nur nach Einrichtung.">
+  <title>Digitales WMH Portal – Transparente Schadensabwicklung | Wir machen Handwerk</title>
+  <meta name="description" content="Das WMH Portal bildet den gesamten Prozess digital ab – von der Schadensmeldung bis zur Abrechnung. Transparenz in Echtzeit für Hausverwaltungen, Versicherungen und Handwerker.">
   <link rel="canonical" href="https://www.wir-machen-handwerk.de/digitales-portal/">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
+<!-- NAVIGATION -->
 <nav class="nav" role="navigation" aria-label="Hauptnavigation">
   <div class="container nav__inner">
     <a href="/" class="nav__logo" aria-label="Wir machen Handwerk – zur Startseite">
-      <svg class="nav__logo-icon" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <svg class="nav__logo-icon" viewBox="0 0 42 42" fill="none" aria-hidden="true">
         <rect width="42" height="42" rx="6" fill="#1A3F6F"/>
         <polygon points="21,7 36,19 33,19 33,35 9,35 9,19 6,19" fill="white" opacity="0.9"/>
         <rect x="15" y="24" width="12" height="7" rx="1.5" fill="#F07800"/>
@@ -28,7 +29,10 @@
       <li><a href="/">Start</a></li>
       <li><a href="/digitales-portal/" class="active">Digitales Portal</a></li>
       <li class="nav__dropdown">
-        <span class="nav__dropdown-toggle" tabindex="0">Für wen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></span>
+        <span class="nav__dropdown-toggle" tabindex="0" role="button" aria-haspopup="true">
+          Für wen
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </span>
         <ul class="nav__dropdown-menu" role="list">
           <li><a href="/fuer-hausverwaltungen/">Hausverwaltungen</a></li>
           <li><a href="/fuer-versicherungen/">Versicherungen</a></li>
@@ -41,14 +45,13 @@
     </ul>
     <div class="nav__actions">
       <a href="/schadensmeldung/" class="btn btn--orange btn--sm">Schadensfall melden</a>
-      <a href="https://portal.wir-machen-handwerk.de" class="nav__login" target="_blank" rel="noopener">Portal Login</a>
+      <a href="https://portal.wir-machen-handwerk.de" class="nav__login" target="_blank" rel="noopener">Portal Login →</a>
     </div>
     <button class="nav__toggle" aria-label="Menü öffnen" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
 </nav>
-
 <nav class="nav__mobile" aria-label="Mobile Navigation">
   <a href="/">Start</a>
   <a href="/digitales-portal/">Digitales Portal</a>
@@ -60,85 +63,310 @@
   <a href="/leistungen/">Leistungen</a>
   <a href="/kontakt/">Kontakt</a>
   <a href="/schadensmeldung/" class="btn btn--orange">Schadensfall melden</a>
-  <a href="https://portal.wir-machen-handwerk.de" target="_blank" rel="noopener" style="text-align:center;color:var(--mid);font-size:0.875rem;border-bottom:none;margin-top:0.5rem;">Portal Login →</a>
+  <a href="https://portal.wir-machen-handwerk.de" target="_blank" rel="noopener" class="nav__mobile-login">Portal Login →</a>
 </nav>
 
 <main id="main">
 
-<header class="page-header" aria-labelledby="page-headline">
-  <div class="container">
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="/">Start</a>
-      <span aria-hidden="true">›</span>
-      <span aria-current="page">Digitales Portal</span>
-    </nav>
-    <h1 id="page-headline">Das digitale Portal für <span>strukturierte Handwerksabwicklung</span></h1>
-    <p class="lead lead--white">Das WMH Portal ist das zentrale Arbeitsportal von Wir machen Handwerk. Es digitalisiert die Abwicklung von Schadensfällen, Reparaturen und Sanierungen – für alle Beteiligten an einem Ort.</p>
+<!-- =============================================
+     PORTAL HERO
+     ============================================= -->
+<section class="hero" aria-labelledby="portal-hero-headline">
+  <div class="hero__bg">
+    <div class="hero__bg-gradient"></div>
+    <div class="hero__bg-grid"></div>
+    <div class="hero__bg-noise"></div>
+    <div class="hero__bg-glow"></div>
   </div>
-</header>
-
-<!-- Intro -->
-<section class="section" aria-labelledby="intro-headline">
-  <div class="container">
-    <div class="two-col">
-      <div>
-        <span class="section-label">Ein System für alle Rollen</span>
-        <h2 id="intro-headline">Alle Beteiligten – eine Plattform</h2>
-        <p class="lead mt-2">Das WMH Portal unterstützt Hausverwaltungen, Versicherungen, Sachverständige, Handwerkspartner und interne Teams bei der täglichen Zusammenarbeit. Es bündelt Aufträge, Objekte, Dokumente, Statusinformationen und Kommunikation an einem Ort – und stellt dabei sicher, dass jede Rolle nur das sieht, was für sie relevant ist.</p>
-
-        <div class="notice mt-3" role="note">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-          <p><strong>Kein öffentliches Produkt:</strong> Der Zugang zum Portal wird ausschließlich nach Einrichtung der Zusammenarbeit bereitgestellt. Es gibt keine öffentliche Registrierung und keinen offenen App-Zugang.</p>
-        </div>
-
-        <div class="mt-3" style="display:flex;gap:1rem;flex-wrap:wrap;">
-          <a href="/kontakt/" class="btn btn--orange">Zusammenarbeit anfragen</a>
-          <a href="https://portal.wir-machen-handwerk.de" class="btn btn--outline-blue" target="_blank" rel="noopener">Portal Login</a>
-        </div>
-      </div>
-
-      <div>
-        <div class="portal-preview" role="img" aria-label="Screenshot des WMH Portals">
-          <div class="portal-preview__bar">
-            <div class="portal-preview__dot"></div>
-            <div class="portal-preview__dot"></div>
-            <div class="portal-preview__dot"></div>
-            <div class="portal-preview__url">portal.wir-machen-handwerk.de</div>
+  <div class="hero__inner">
+    <div class="container">
+      <div class="hero__grid">
+        <div class="hero__content">
+          <div class="hero__eyebrow">
+            <span class="hero__eyebrow-dot"></span>
+            Selbst entwickelt · End-to-End · DSGVO-konform
           </div>
-          <div class="portal-preview__content">
-            <div class="portal-preview__sidebar">
-              <div class="portal-preview__nav-item active"></div>
-              <div class="portal-preview__nav-item"></div>
-              <div class="portal-preview__nav-item"></div>
-              <div class="portal-preview__nav-item"></div>
-              <div class="portal-preview__nav-item"></div>
-              <div class="portal-preview__nav-item"></div>
+          <h1 class="hero__headline" id="portal-hero-headline">
+            Das WMH Portal.<br>
+            <em>Ihr digitaler Vorteil.</em>
+          </h1>
+          <p class="hero__sub">
+            Unser Portal bildet den gesamten Prozess digital ab – von der Schadensmeldung über die Koordination bis zur Abrechnung. Kein Medienbruch, kein Papierkram, keine Rückfragen.
+          </p>
+          <div class="hero__actions">
+            <a href="/kontakt/" class="btn btn--orange btn--lg">
+              Zugang anfragen
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+            <a href="https://portal.wir-machen-handwerk.de" target="_blank" rel="noopener" class="btn btn--outline btn--lg">
+              Portal Login →
+            </a>
+          </div>
+          <div class="hero__trust">
+            <span class="hero__trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Selbst entwickelt
+            </span>
+            <span class="hero__trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Drei Portale, eine Plattform
+            </span>
+            <span class="hero__trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Nur auf Einladung
+            </span>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Portal mockup -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="portal-window">
+            <div class="portal-window__chrome">
+              <div class="portal-window__dots">
+                <div class="portal-window__dot"></div>
+                <div class="portal-window__dot"></div>
+                <div class="portal-window__dot"></div>
+              </div>
+              <div class="portal-window__url">portal.wir-machen-handwerk.de</div>
             </div>
-            <div class="portal-preview__main">
-              <div class="portal-preview__stat">
-                <div class="portal-preview__stat-num">24</div>
-                <div class="portal-preview__stat-label">Aktive Fälle</div>
+            <div class="portal-ui">
+              <div class="portal-ui__sidebar">
+                <div class="portal-ui__logo-area">
+                  <div class="portal-ui__logo-bar"></div>
+                  <div class="portal-ui__logo-bar2"></div>
+                </div>
+                <div class="portal-ui__nav-item active"><div class="portal-ui__nav-dot"></div><div class="portal-ui__nav-line"></div></div>
+                <div class="portal-ui__nav-item"><div class="portal-ui__nav-dot"></div><div class="portal-ui__nav-line"></div></div>
+                <div class="portal-ui__nav-item"><div class="portal-ui__nav-dot"></div><div class="portal-ui__nav-line"></div></div>
+                <div class="portal-ui__nav-item"><div class="portal-ui__nav-dot"></div><div class="portal-ui__nav-line"></div></div>
+                <div class="portal-ui__nav-item"><div class="portal-ui__nav-dot"></div><div class="portal-ui__nav-line"></div></div>
+                <div class="portal-ui__nav-spacer"></div>
               </div>
-              <div class="portal-preview__stat">
-                <div class="portal-preview__stat-num">8</div>
-                <div class="portal-preview__stat-label">Partner aktiv</div>
+              <div class="portal-ui__main">
+                <div class="portal-ui__topbar">
+                  <div class="portal-ui__page-title"></div>
+                  <div class="portal-ui__badge"></div>
+                </div>
+                <div class="portal-ui__stats">
+                  <div class="portal-ui__stat"><div class="portal-ui__stat-num"></div><div class="portal-ui__stat-label"></div></div>
+                  <div class="portal-ui__stat"><div class="portal-ui__stat-num"></div><div class="portal-ui__stat-label"></div></div>
+                  <div class="portal-ui__stat"><div class="portal-ui__stat-num"></div><div class="portal-ui__stat-label"></div></div>
+                </div>
+                <div class="portal-ui__list">
+                  <div class="portal-ui__row"><div class="portal-ui__row-icon"></div><div class="portal-ui__row-body"><div class="portal-ui__row-line1"></div><div class="portal-ui__row-line2"></div></div><div class="portal-ui__row-status"></div></div>
+                  <div class="portal-ui__row"><div class="portal-ui__row-icon orange"></div><div class="portal-ui__row-body"><div class="portal-ui__row-line1"></div><div class="portal-ui__row-line2"></div></div><div class="portal-ui__row-status orange-status"></div></div>
+                  <div class="portal-ui__row"><div class="portal-ui__row-icon green"></div><div class="portal-ui__row-body"><div class="portal-ui__row-line1"></div><div class="portal-ui__row-line2"></div></div><div class="portal-ui__row-status blue-status"></div></div>
+                  <div class="portal-ui__row"><div class="portal-ui__row-icon"></div><div class="portal-ui__row-body"><div class="portal-ui__row-line1"></div><div class="portal-ui__row-line2"></div></div><div class="portal-ui__row-status"></div></div>
+                </div>
               </div>
-              <div class="portal-preview__stat">
-                <div class="portal-preview__stat-num">97</div>
-                <div class="portal-preview__stat-label">Dokumente</div>
-              </div>
-              <div class="portal-preview__row">
-                <div class="portal-preview__row-text">Fallakte: WS-2024-0847</div>
-                <div class="portal-preview__badge portal-preview__badge--orange">In Bearbeitung</div>
-              </div>
-              <div class="portal-preview__row">
-                <div class="portal-preview__row-text">Bericht hochgeladen</div>
-                <div class="portal-preview__badge portal-preview__badge--green">Erledigt</div>
-              </div>
-              <div class="portal-preview__row">
-                <div class="portal-preview__row-text">Angebot freigegeben</div>
-                <div class="portal-preview__badge portal-preview__badge--blue">Signiert</div>
-              </div>
+            </div>
+          </div>
+          <!-- Floating Cards -->
+          <div class="hero__float hero__float--1">
+            <div class="hero__float-icon hero__float-icon--blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            </div>
+            <div class="hero__float-label">Digitale Signatur</div>
+            <div class="hero__float-value">Kein Papier mehr</div>
+          </div>
+          <div class="hero__float hero__float--2">
+            <div class="hero__float-icon hero__float-icon--green">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="hero__float-label">Audit-Log</div>
+            <div class="hero__float-value">DSGVO-konform</div>
+          </div>
+          <div class="hero__float hero__float--3">
+            <div class="hero__float-icon hero__float-icon--orange">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="hero__float-label">Echtzeit</div>
+            <div class="hero__float-value">Status sofort sichtbar</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     PORTAL OVERVIEW: 3 PORTALE
+     ============================================= -->
+<section class="section" aria-labelledby="portale-headline">
+  <div class="container">
+    <div class="section__header section__header--center">
+      <span class="section__label">Eine Plattform – drei Zugänge</span>
+      <h2 class="section__title" id="portale-headline">Jede Rolle sieht<br>nur das Relevante</h2>
+      <p class="section__sub">Das WMH Portal ist kein generisches Tool – es wurde für die spezifischen Anforderungen aller Beteiligten entwickelt. Jede Rolle hat einen eigenen, angepassten Zugang.</p>
+    </div>
+    <div class="target-grid animate">
+      <div class="target-card">
+        <div class="target-card__icon target-card__icon--solid"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" width="24" height="24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3 class="target-card__title">Admin-Portal</h3>
+        <p class="target-card__text">Das interne WMH-Team sieht alle Fälle, Handwerker, Partner und Finanzdaten. Volle Kontrolle über die gesamte Plattform – Fallzuweisung, Angebotserstellung, Abrechnung und Kommunikation an einem Ort.</p>
+        <span class="target-card__meta">Nur WMH-Team</span>
+      </div>
+      <div class="target-card">
+        <div class="target-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <h3 class="target-card__title">Partner-Portal</h3>
+        <p class="target-card__text">Hausverwaltungen, Versicherungen und Sachverständige sehen ihre eigenen Fälle, den aktuellen Status, zugehörige Dokumente und Angebote – ohne Zugriff auf betriebsinterne Daten anderer.</p>
+        <a href="/fuer-hausverwaltungen/" class="target-card__link">Für Hausverwaltungen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="15" height="15" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></a>
+      </div>
+      <div class="target-card">
+        <div class="target-card__icon target-card__icon--orange"><svg viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="2" width="24" height="24" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+        <h3 class="target-card__title">Handwerker-Portal</h3>
+        <p class="target-card__text">Handwerkerbetriebe sehen ausschließlich ihre eigenen zugewiesenen Aufträge, Dokumente und ihren Auftragsvolumen – keine fremden Daten, klare Zuständigkeit, einfache Kommunikation.</p>
+        <a href="/fuer-handwerker/" class="target-card__link">Für Handwerker <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="15" height="15" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     FUNKTIONEN – 13 KERNFUNKTIONEN
+     ============================================= -->
+<section class="section section--gray" aria-labelledby="funktionen-headline">
+  <div class="container">
+    <div class="section__header section__header--center">
+      <span class="section__label">Plattform-Funktionen</span>
+      <h2 class="section__title" id="funktionen-headline">13 Kernfunktionen.<br>Ein System.</h2>
+      <p class="section__sub">Kein Flickenteppich aus externen Tools. Das WMH Portal deckt den gesamten Prozess mit eigenentwickelten Funktionen ab.</p>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-card animate">
+        <div class="feature-card__num">01</div>
+        <h3>Fallmanagement</h3>
+        <p>Vollständiger Lebenszyklus von der Erstellung bis zum Abschluss – mit visueller Status-Timeline in Echtzeit.</p>
+      </div>
+      <div class="feature-card animate animate--delay-1">
+        <div class="feature-card__num">02</div>
+        <h3>Handwerker-Verwaltung</h3>
+        <p>Detailprofile, Einladungssystem, Bewertungen nach Qualität, Pünktlichkeit und Zuverlässigkeit.</p>
+      </div>
+      <div class="feature-card animate animate--delay-2">
+        <div class="feature-card__num">03</div>
+        <h3>Partner- & Kundenverwaltung</h3>
+        <p>Getrennte Bereiche für Versicherungen, Hausverwaltungen und Endkunden – klare Datentrennung.</p>
+      </div>
+      <div class="feature-card animate">
+        <div class="feature-card__num">04</div>
+        <h3>sevDesk-Integration</h3>
+        <p>Angebote und Rechnungen direkt aus dem Fall – keine Doppeleingaben, keine manuelle Übertragung.</p>
+      </div>
+      <div class="feature-card animate animate--delay-1">
+        <div class="feature-card__num">05</div>
+        <h3>Digitale Signatur</h3>
+        <p>Angebote per E-Mail signieren – kein Papier, kein Fax, kein Medienbruch.</p>
+      </div>
+      <div class="feature-card animate animate--delay-2">
+        <div class="feature-card__num">06</div>
+        <h3>Dokumentenmanagement</h3>
+        <p>Upload, Vorschau und Download direkt im Fallkontext. Alle Unterlagen an einem Ort.</p>
+      </div>
+      <div class="feature-card animate">
+        <div class="feature-card__num">07</div>
+        <h3>Echtzeit-Chat</h3>
+        <p>Kommunikation zwischen WMH und Handwerker direkt im Fallkontext – kein E-Mail-Chaos.</p>
+      </div>
+      <div class="feature-card animate animate--delay-1">
+        <div class="feature-card__num">08</div>
+        <h3>CRM-System</h3>
+        <p>Lead-Management, Kanban- und Tabellenansicht, CSV-Import – kein externes Tool erforderlich.</p>
+      </div>
+      <div class="feature-card animate animate--delay-2">
+        <div class="feature-card__num">09</div>
+        <h3>Finanzen & Provisionen</h3>
+        <p>Auftragsvolumen, Provisionsberechnung – Handwerker sehen nur ihren eigenen Anteil.</p>
+      </div>
+      <div class="feature-card animate">
+        <div class="feature-card__num">10</div>
+        <h3>Vorlagen-System</h3>
+        <p>E-Mail-Vorlagen, Angebotstexte, Signaturen – konsistent für alle Kommunikationskanäle.</p>
+      </div>
+      <div class="feature-card animate animate--delay-1">
+        <div class="feature-card__num">11</div>
+        <h3>Konfigurierbares Dashboard</h3>
+        <p>Drag & Drop, variable Größen, benutzerspezifisch gespeichert – jeder sieht sein optimales Layout.</p>
+      </div>
+      <div class="feature-card animate animate--delay-2">
+        <div class="feature-card__num">12</div>
+        <h3>Audit-Log</h3>
+        <p>DSGVO-konforme Protokollierung aller Änderungen – wer, wann, was. Lückenlos und revisionssicher.</p>
+      </div>
+    </div>
+    <div style="margin-top:2rem;" class="animate">
+      <div class="feature-card feature-card--dark">
+        <div class="feature-card__icon feature-card__icon--dark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="2" width="24" height="24" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3>Aktivitäts-Feed</h3>
+        <p>Chronologische Übersicht aller Plattform-Ereignisse – für vollständige Nachvollziehbarkeit des gesamten Vorgangs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     SCREENSHOT SECTION – PORTAL DASHBOARD
+     ============================================= -->
+<section class="portal-section section" aria-labelledby="screenshot-headline">
+  <div class="portal-section__bg-gradient"></div>
+  <div class="portal-section__bg-grid"></div>
+  <div class="portal-section__inner">
+    <div class="container">
+      <div class="section__header section__header--center">
+        <span class="section__label">Portal in der Praxis</span>
+        <h2 class="section__title" id="screenshot-headline">Kein abstraktes Versprechen.<br>Ein echtes System.</h2>
+        <p class="section__sub">Das Portal ist kein Konzept – es wird täglich in der Abwicklung von Schadensfällen und Aufträgen eingesetzt.</p>
+      </div>
+
+      <!-- Screenshot Grid -->
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-top:1rem;" class="animate">
+        <div class="portal-mockup-lg">
+          <div class="portal-mockup-lg__chrome">
+            <div class="portal-window__dots"><div class="portal-window__dot"></div><div class="portal-window__dot"></div><div class="portal-window__dot"></div></div>
+            <div class="portal-window__url" style="font-size:10px;">Dashboard-Übersicht</div>
+          </div>
+          <div class="portal-screenshot-slot" style="min-height:240px;">
+            <div class="portal-screenshot-slot__label">
+              <strong>Dashboard</strong>
+              <code>/images/portal/dashboard.png</code>
+            </div>
+          </div>
+        </div>
+        <div class="portal-mockup-lg animate animate--delay-1">
+          <div class="portal-mockup-lg__chrome">
+            <div class="portal-window__dots"><div class="portal-window__dot"></div><div class="portal-window__dot"></div><div class="portal-window__dot"></div></div>
+            <div class="portal-window__url" style="font-size:10px;">Auftragsübersicht</div>
+          </div>
+          <div class="portal-screenshot-slot" style="min-height:240px;">
+            <div class="portal-screenshot-slot__label">
+              <strong>Aufträge</strong>
+              <code>/images/portal/auftraege.png</code>
+            </div>
+          </div>
+        </div>
+        <div class="portal-mockup-lg animate animate--delay-2">
+          <div class="portal-mockup-lg__chrome">
+            <div class="portal-window__dots"><div class="portal-window__dot"></div><div class="portal-window__dot"></div><div class="portal-window__dot"></div></div>
+            <div class="portal-window__url" style="font-size:10px;">Dokumentenansicht</div>
+          </div>
+          <div class="portal-screenshot-slot" style="min-height:240px;">
+            <div class="portal-screenshot-slot__label">
+              <strong>Dokumente</strong>
+              <code>/images/portal/dokumente.png</code>
+            </div>
+          </div>
+        </div>
+        <div class="portal-mockup-lg animate animate--delay-3">
+          <div class="portal-mockup-lg__chrome">
+            <div class="portal-window__dots"><div class="portal-window__dot"></div><div class="portal-window__dot"></div><div class="portal-window__dot"></div></div>
+            <div class="portal-window__url" style="font-size:10px;">Statusverlauf</div>
+          </div>
+          <div class="portal-screenshot-slot" style="min-height:240px;">
+            <div class="portal-screenshot-slot__label">
+              <strong>Status-Timeline</strong>
+              <code>/images/portal/status.png</code>
             </div>
           </div>
         </div>
@@ -147,320 +375,215 @@
   </div>
 </section>
 
-<!-- Drei Portale -->
-<section class="section section--gray" aria-labelledby="portale-headline">
+<!-- =============================================
+     ROLLE: HAUSVERWALTUNGEN
+     ============================================= -->
+<section class="section" aria-labelledby="hv-headline">
   <div class="container">
+    <div class="role-section">
+      <div>
+        <span class="section__label">Für Hausverwaltungen</span>
+        <h2 class="section__title" id="hv-headline">Voller Überblick.<br>Kein Aufwand.</h2>
+        <p class="lead" style="margin-bottom:1.5rem;">Als Hausverwaltung sehen Sie alle Ihre Fälle, den aktuellen Bearbeitungsstand und alle zugehörigen Dokumente – ohne sich selbst um Koordination kümmern zu müssen.</p>
+        <div class="role-features">
+          <div class="role-feature animate">
+            <div class="role-feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+            <div><h4>Echtzeit-Statusübersicht</h4><p>Jeder Fall zeigt den aktuellen Bearbeitungsstatus – ohne Rückfragen.</p></div>
+          </div>
+          <div class="role-feature animate animate--delay-1">
+            <div class="role-feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+            <div><h4>Alle Dokumente an einem Ort</h4><p>Angebote, Fotos, Rechnungen – alles im Fallkontext abrufbar.</p></div>
+          </div>
+          <div class="role-feature animate animate--delay-2">
+            <div class="role-feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+            <div><h4>Direktkommunikation</h4><p>Fragen direkt im Fall stellen – keine losen E-Mail-Ketten mehr.</p></div>
+          </div>
+        </div>
+        <a href="/fuer-hausverwaltungen/" class="btn btn--blue" style="margin-top:1.75rem;">Zur Hausverwaltungs-Seite</a>
+      </div>
+      <div class="animate animate--delay-1">
+        <div class="portal-mockup-lg">
+          <div class="portal-mockup-lg__chrome">
+            <div class="portal-window__dots"><div class="portal-window__dot"></div><div class="portal-window__dot"></div><div class="portal-window__dot"></div></div>
+            <div class="portal-window__url">Partner-Ansicht · Hausverwaltung</div>
+          </div>
+          <div class="portal-screenshot-slot" style="min-height:280px;">
+            <div class="portal-screenshot-slot__label">
+              <strong>Partner-Portal Screenshot</strong>
+              <code>/images/portal/partner-portal.png</code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     ROLLE: VERSICHERUNGEN & SACHVERSTÄNDIGE
+     ============================================= -->
+<section class="section section--gray" aria-labelledby="vers-headline">
+  <div class="container">
+    <div class="role-section role-section--reverse">
+      <div>
+        <span class="section__label">Für Versicherungen & Sachverständige</span>
+        <h2 class="section__title" id="vers-headline">Strukturierte Regulierung.<br>Lückenlose Dokumentation.</h2>
+        <p class="lead" style="margin-bottom:1.5rem;">Bei Versicherungsschäden zählt Geschwindigkeit und Nachvollziehbarkeit. Das Portal liefert beides: schnelle Koordination und eine vollständige Dokumentation aller Vorgänge.</p>
+        <div class="role-features">
+          <div class="role-feature animate">
+            <div class="role-feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <div><h4>Revisionssichere Protokollierung</h4><p>Alle Schritte im Audit-Log – nachvollziehbar und DSGVO-konform gespeichert.</p></div>
+          </div>
+          <div class="role-feature animate animate--delay-1">
+            <div class="role-feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+            <div><h4>Schnelle Schadensbehebung</h4><p>Gewerke werden sofort koordiniert – kein Zeitverlust durch manuelle Abstimmung.</p></div>
+          </div>
+          <div class="role-feature animate animate--delay-2">
+            <div class="role-feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+            <div><h4>Digitale Angebots-Signatur</h4><p>Kein Papier, kein Scan – Angebote werden direkt digital freigegeben.</p></div>
+          </div>
+        </div>
+        <div style="display:flex; gap:1rem; margin-top:1.75rem; flex-wrap:wrap;">
+          <a href="/fuer-versicherungen/" class="btn btn--blue">Für Versicherungen</a>
+          <a href="/fuer-sachverstaendige/" class="btn btn--outline-blue">Für Sachverständige</a>
+        </div>
+      </div>
+      <div class="animate">
+        <div class="portal-mockup-lg">
+          <div class="portal-mockup-lg__chrome">
+            <div class="portal-window__dots"><div class="portal-window__dot"></div><div class="portal-window__dot"></div><div class="portal-window__dot"></div></div>
+            <div class="portal-window__url">Objektverwaltung & Status</div>
+          </div>
+          <div class="portal-screenshot-slot" style="min-height:280px;">
+            <div class="portal-screenshot-slot__label">
+              <strong>Objektverwaltung Screenshot</strong>
+              <code>/images/portal/objekte.png</code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     ROLLE: HANDWERKER
+     ============================================= -->
+<section class="section" aria-labelledby="hw-headline">
+  <div class="container">
+    <div class="role-section">
+      <div>
+        <span class="section__label">Für Handwerkerbetriebe</span>
+        <h2 class="section__title" id="hw-headline">Aufträge. Klartext.<br>Keine Bürokratie.</h2>
+        <p class="lead" style="margin-bottom:1.5rem;">Als Handwerksbetrieb im WMH-Netzwerk sehen Sie klar und übersichtlich nur Ihre eigenen Aufträge – mit allen Informationen, die Sie für die Ausführung brauchen.</p>
+        <div class="role-features">
+          <div class="role-feature animate">
+            <div class="role-feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+            <div><h4>Eigene Auftragsübersicht</h4><p>Nur Ihre Aufträge, übersichtlich strukturiert – kein Datenchaos.</p></div>
+          </div>
+          <div class="role-feature animate animate--delay-1">
+            <div class="role-feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+            <div><h4>Eigenes Auftragsvolumen</h4><p>Transparente Darstellung Ihres Volumens – nur Ihre eigenen Zahlen.</p></div>
+          </div>
+          <div class="role-feature animate animate--delay-2">
+            <div class="role-feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+            <div><h4>Chat direkt im Auftrag</h4><p>Rückfragen klären ohne E-Mail – einfach im Fallkontext kommunizieren.</p></div>
+          </div>
+        </div>
+        <div style="margin-top:1.75rem; display:flex; gap:1rem; flex-wrap:wrap;">
+          <a href="/fuer-handwerker/" class="btn btn--blue">Zur Handwerker-Seite</a>
+        </div>
+      </div>
+      <div class="animate animate--delay-1">
+        <div class="portal-mockup-lg">
+          <div class="portal-mockup-lg__chrome">
+            <div class="portal-window__dots"><div class="portal-window__dot"></div><div class="portal-window__dot"></div><div class="portal-window__dot"></div></div>
+            <div class="portal-window__url">Handwerker-Ansicht</div>
+          </div>
+          <div class="portal-screenshot-slot" style="min-height:280px;">
+            <div class="portal-screenshot-slot__label">
+              <strong>Handwerker-Portal Screenshot</strong>
+              <code>/images/portal/handwerker-portal.png</code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     ZUGANG – NUR AUF EINLADUNG
+     ============================================= -->
+<section class="section section--gray" aria-labelledby="zugang-headline">
+  <div class="container container--narrow">
     <div class="section__header section__header--center">
-      <span class="section-label">Rollenbasierter Zugang</span>
-      <h2 id="portale-headline">Drei Portale – ein System</h2>
-      <p class="lead">Jede Nutzergruppe sieht genau das, was sie benötigt. Keine unnötigen Informationen, keine Datenschutzprobleme.</p>
+      <span class="section__label">Portal-Zugang</span>
+      <h2 class="section__title" id="zugang-headline">Zugang nur für<br>Kunden und Partner</h2>
     </div>
-
-    <div class="cards cards--3" role="list">
-      <article class="card" role="listitem">
-        <div class="card__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    <div class="portal-access-grid animate">
+      <div class="card" style="text-align:center; padding:2.5rem 2rem;">
+        <div class="portal-access-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2" width="26" height="26" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
         </div>
-        <span class="tag tag--blue mb-2">Admin-Portal</span>
-        <h3>Wir machen Handwerk (Intern)</h3>
-        <p>Vollständige Sicht auf alle Fälle, Partner und Kunden. Steuerung der Aufträge, Finanzen, Kommunikation und Abrechnung.</p>
-        <div class="icon-list mt-3">
-          <div class="icon-list__item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-            Alle Aufträge steuern
-          </div>
-          <div class="icon-list__item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-            Partner koordinieren
-          </div>
-          <div class="icon-list__item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-            Dokumentation prüfen
-          </div>
-          <div class="icon-list__item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-            Abrechnung vorbereiten
-          </div>
+        <h3>Für Hausverwaltungen & Versicherungen</h3>
+        <p>Partner erhalten ihren Zugang auf Einladung nach Aufnahme der Zusammenarbeit. Kontaktieren Sie uns für einen unverbindlichen Einstieg.</p>
+        <a href="/kontakt/" class="btn btn--blue" style="margin-top:1.25rem;">Zusammenarbeit anfragen</a>
+      </div>
+      <div class="card card--blue" style="text-align:center; padding:2.5rem 2rem;">
+        <div class="portal-access-icon portal-access-icon--dark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="2" width="26" height="26" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
         </div>
-      </article>
-
-      <article class="card card--blue" role="listitem">
-        <div class="card__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-        </div>
-        <span class="tag" style="background:rgba(255,255,255,0.15);color:white;margin-bottom:0.5rem;">Partner-Portal</span>
-        <h3>Hausverwaltungen &amp; Versicherungen</h3>
-        <p>Einsicht in eigene Fälle, Statusinformationen und Dokumente. Kommunikation direkt im Fallkontext.</p>
-        <div class="icon-list mt-3">
-          <div class="icon-list__item" style="color:rgba(255,255,255,0.85)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-            Eigene Fälle verfolgen
-          </div>
-          <div class="icon-list__item" style="color:rgba(255,255,255,0.85)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-            Dokumente hochladen
-          </div>
-          <div class="icon-list__item" style="color:rgba(255,255,255,0.85)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-            Status einsehen
-          </div>
-          <div class="icon-list__item" style="color:rgba(255,255,255,0.85)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-            Angebote digital signieren
-          </div>
-        </div>
-      </article>
-
-      <article class="card" role="listitem">
-        <div class="card__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-        </div>
-        <span class="tag tag--orange mb-2">Handwerker-Portal</span>
-        <h3>Handwerkspartner</h3>
-        <p>Eigene Aufträge einsehen, Dokumente hochladen, Fotos und Zeiten erfassen, Rückmeldungen geben.</p>
-        <div class="icon-list mt-3">
-          <div class="icon-list__item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-            Aufträge einsehen
-          </div>
-          <div class="icon-list__item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-            Fotos hochladen
-          </div>
-          <div class="icon-list__item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-            Zeiten und Material dokumentieren
-          </div>
-          <div class="icon-list__item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-            Auftragsvolumen einsehen
-          </div>
-        </div>
-      </article>
+        <h3>Bestehende Kunden & Partner</h3>
+        <p>Sie haben bereits einen Zugang? Melden Sie sich direkt über das Portal an. Bei Fragen steht Ihr persönlicher Ansprechpartner bereit.</p>
+        <a href="https://portal.wir-machen-handwerk.de" target="_blank" rel="noopener" class="btn btn--orange" style="margin-top:1.25rem;">Portal Login →</a>
+      </div>
+    </div>
+    <div class="highlight-box" style="margin-top:1.5rem; text-align:center; border-left:none; border:1px solid var(--blue-light); border-radius:var(--radius-lg);">
+      <p class="highlight-box__text">
+        <strong>Keine freie Registrierung.</strong> Der Zugang zum WMH Portal ist ausschließlich für bestehende Kunden und Partner vorbehalten. Für neue Zusammenarbeit nehmen Sie bitte <a href="/kontakt/">über unser Kontaktformular</a> Verbindung auf.
+      </p>
     </div>
   </div>
 </section>
 
-<!-- Features -->
-<section class="section" aria-labelledby="features-headline">
+<!-- =============================================
+     CTA BANNER
+     ============================================= -->
+<section class="cta-banner" aria-labelledby="portal-cta-headline">
   <div class="container">
-    <div class="section__header">
-      <span class="section-label">Kernfunktionen</span>
-      <h2 id="features-headline">Was das Portal leistet</h2>
-      <p class="lead">Entwickelt für die tägliche Arbeit in der Handwerkskoordination – von der Fallerfassung bis zur lückenlosen Dokumentation.</p>
-    </div>
-
-    <div class="features features--2" role="list">
-      <div class="feature" role="listitem">
-        <div class="feature__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-        </div>
-        <div class="feature__text">
-          <strong>Fallmanagement</strong>
-          <span>Vollständiger Lebenszyklus von der Erstmeldung bis zum Abschluss mit visueller Status-Timeline.</span>
-        </div>
-      </div>
-      <div class="feature" role="listitem">
-        <div class="feature__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-        </div>
-        <div class="feature__text">
-          <strong>Handwerker-Verwaltung</strong>
-          <span>Detailprofile, Einladungssystem und Bewertungen nach Qualität, Pünktlichkeit und Zuverlässigkeit.</span>
-        </div>
-      </div>
-      <div class="feature" role="listitem">
-        <div class="feature__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-        </div>
-        <div class="feature__text">
-          <strong>Dokumentenmanagement</strong>
-          <span>Upload, Vorschau und Download direkt im Fallkontext – keine verlorenen Anhänge.</span>
-        </div>
-      </div>
-      <div class="feature" role="listitem">
-        <div class="feature__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-        </div>
-        <div class="feature__text">
-          <strong>Digitale Signatur</strong>
-          <span>Angebote per E-Mail signieren – kein Papier, kein Medienbruch, rechtssicher.</span>
-        </div>
-      </div>
-      <div class="feature" role="listitem">
-        <div class="feature__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-        </div>
-        <div class="feature__text">
-          <strong>Echtzeit-Chat</strong>
-          <span>Kommunikation zwischen Admin und Handwerker direkt im Fallkontext – kein separates Tool.</span>
-        </div>
-      </div>
-      <div class="feature" role="listitem">
-        <div class="feature__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-        </div>
-        <div class="feature__text">
-          <strong>Konfigurierbares Dashboard</strong>
-          <span>Drag & Drop, frei wählbare Größen, benutzerspezifisch gespeichert.</span>
-        </div>
-      </div>
-      <div class="feature" role="listitem">
-        <div class="feature__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
-        </div>
-        <div class="feature__text">
-          <strong>CRM-System</strong>
-          <span>Lead-Management, Kanban- und Tabellenansicht, CSV-Import – kein externes Tool notwendig.</span>
-        </div>
-      </div>
-      <div class="feature" role="listitem">
-        <div class="feature__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        </div>
-        <div class="feature__text">
-          <strong>Audit-Log &amp; DSGVO</strong>
-          <span>Lückenlose Protokollierung aller Änderungen: wer, wann, was – vollständig DSGVO-konform.</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Für wen im Detail -->
-<section class="section section--gray" aria-labelledby="rollen-headline">
-  <div class="container">
-    <div class="section__header section__header--center">
-      <span class="section-label">Rollenspezifische Funktionen</span>
-      <h2 id="rollen-headline">Was jede Rolle im Portal sieht</h2>
-    </div>
-
-    <div class="cards cards--2" role="list">
-      <article class="card" role="listitem">
-        <h3>Für Hausverwaltungen</h3>
-        <p class="mt-2">Verwalten Sie Objekte und Liegenschaften, verfolgen Sie Fallstände in Echtzeit und erhalten Sie alle relevanten Dokumente direkt im Portal.</p>
-        <div class="icon-list mt-3">
-          <div class="icon-list__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Objekte und Fälle verwalten</div>
-          <div class="icon-list__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Bearbeitungsstand live verfolgen</div>
-          <div class="icon-list__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Dokumente hochladen und abrufen</div>
-          <div class="icon-list__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Kommunikation im Fallkontext reduzieren</div>
-        </div>
-        <a href="/fuer-hausverwaltungen/" class="card__link mt-2">Mehr für Hausverwaltungen →</a>
-      </article>
-
-      <article class="card" role="listitem">
-        <h3>Für Versicherungen</h3>
-        <p class="mt-2">Nachvollziehbare Dokumentation von Schadensverläufen, gebündelte Unterlagen und strukturierte Berichte – direkt für die Schadensregulierung.</p>
-        <div class="icon-list mt-3">
-          <div class="icon-list__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Schäden nachvollziehbar dokumentieren</div>
-          <div class="icon-list__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Fotos und Unterlagen gebündelt abrufen</div>
-          <div class="icon-list__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Bearbeitungsstände einsehen</div>
-          <div class="icon-list__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Abwicklung strukturieren</div>
-        </div>
-        <a href="/fuer-versicherungen/" class="card__link mt-2">Mehr für Versicherungen →</a>
-      </article>
-
-      <article class="card" role="listitem">
-        <h3>Für Handwerkspartner</h3>
-        <p class="mt-2">Aufträge erhalten, Dokumente einsehen, Fotos und Zeiten erfassen – ohne Papierkram oder aufwändige Kommunikation.</p>
-        <div class="icon-list mt-3">
-          <div class="icon-list__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Eigene Aufträge einsehen</div>
-          <div class="icon-list__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Fotos und Berichte hochladen</div>
-          <div class="icon-list__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Zeiten und Material dokumentieren</div>
-          <div class="icon-list__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Auftragsvolumen einsehen</div>
-        </div>
-        <a href="/fuer-handwerker/" class="card__link mt-2">Mehr für Handwerker →</a>
-      </article>
-
-      <article class="card" role="listitem">
-        <h3>Für interne Teams</h3>
-        <p class="mt-2">Vollständige Steuerung aller Aufträge, Partner und Kunden – inklusive Finanzen, Abrechnung und DSGVO-konformer Protokollierung.</p>
-        <div class="icon-list mt-3">
-          <div class="icon-list__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Aufträge steuern und zuweisen</div>
-          <div class="icon-list__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Kunden und Partner verwalten</div>
-          <div class="icon-list__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Dokumentation prüfen und freigeben</div>
-          <div class="icon-list__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Abrechnung und Finanzen vorbereiten</div>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- Zugang -->
-<section class="section" aria-labelledby="zugang-headline">
-  <div class="container" style="max-width:720px">
-    <div class="section__header section__header--center">
-      <span class="section-label">Zugang zum Portal</span>
-      <h2 id="zugang-headline">Wie Sie Zugang erhalten</h2>
-    </div>
-
-    <div class="highlight-box text-center" style="margin-bottom:2rem;">
-      <strong>Wichtig:</strong> Das WMH Portal ist kein öffentliches SaaS-Produkt. Der Zugang wird nach Einrichtung der Zusammenarbeit individuell bereitgestellt – entweder auf Einladung oder nach bestehender Partnerschaft.
-    </div>
-
-    <div class="steps" role="list">
-      <div class="step" role="listitem">
-        <div class="step__number" aria-hidden="true">01</div>
-        <h3>Zusammenarbeit anfragen oder Schadensfall melden</h3>
-        <p>Nehmen Sie Kontakt auf – per Formular, E-Mail oder Telefon. Wir klären den Rahmen der Zusammenarbeit.</p>
-      </div>
-      <div class="step" role="listitem">
-        <div class="step__number" aria-hidden="true">02</div>
-        <h3>Einrichtung und Onboarding</h3>
-        <p>Wir richten Ihren Zugang ein, legen Ihre Objekte oder Fälle an und führen Sie durch die wesentlichen Funktionen.</p>
-      </div>
-      <div class="step" role="listitem">
-        <div class="step__number" aria-hidden="true">03</div>
-        <h3>Zugang per Einladung</h3>
-        <p>Sie erhalten eine Einladung per E-Mail und können sich direkt einloggen – ohne öffentliche Registrierung.</p>
-      </div>
-    </div>
-
-    <div class="text-center mt-4">
-      <a href="/kontakt/" class="btn btn--orange btn--lg">Zusammenarbeit anfragen</a>
-    </div>
-  </div>
-</section>
-
-<section class="cta-banner" aria-labelledby="cta-headline">
-  <div class="container">
-    <h2 id="cta-headline">Das Portal als Ihr Vorteil</h2>
-    <p class="lead lead--white">Weniger Abstimmung, mehr Transparenz. Alles dokumentiert – für Sie und Ihre Auftraggeber.</p>
+    <span class="cta-banner__label">Nächster Schritt</span>
+    <h2 class="cta-banner__title" id="portal-cta-headline">Das Portal für sich<br>arbeiten lassen.</h2>
+    <p class="cta-banner__text">Starten Sie mit der Zusammenarbeit – und erleben Sie, wie digitale Koordination die Abwicklung spürbar vereinfacht.</p>
     <div class="cta-banner__actions">
-      <a href="/kontakt/" class="btn btn--orange btn--lg">Zusammenarbeit anfragen</a>
-      <a href="/schadensmeldung/" class="btn btn--outline btn--lg">Schadensfall melden</a>
+      <a href="/schadensmeldung/" class="btn btn--orange btn--lg">Schadensfall oder Auftrag melden</a>
+      <a href="/kontakt/" class="btn btn--outline btn--lg">Zusammenarbeit anfragen</a>
     </div>
   </div>
 </section>
 
 </main>
 
+<!-- FOOTER -->
 <footer class="footer" role="contentinfo">
   <div class="container">
     <div class="footer__grid">
       <div class="footer__brand">
         <div class="footer__logo">
-          <svg width="36" height="36" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect width="42" height="42" rx="6" fill="#1A3F6F"/>
-            <polygon points="21,7 36,19 33,19 33,35 9,35 9,19 6,19" fill="white" opacity="0.9"/>
-            <rect x="15" y="24" width="12" height="7" rx="1.5" fill="#F07800"/>
-            <rect x="19" y="22" width="4" height="3" rx="1" fill="#F07800"/>
-          </svg>
-          <span class="footer__logo-text">
-            <span class="footer__logo-top">Wir-Machen</span>
-            <span class="footer__logo-bot">Handwerk.de</span>
-          </span>
+          <svg width="36" height="36" viewBox="0 0 42 42" fill="none" aria-hidden="true"><rect width="42" height="42" rx="6" fill="#1A3F6F"/><polygon points="21,7 36,19 33,19 33,35 9,35 9,19 6,19" fill="white" opacity="0.9"/><rect x="15" y="24" width="12" height="7" rx="1.5" fill="#F07800"/><rect x="19" y="22" width="4" height="3" rx="1" fill="#F07800"/></svg>
+          <span class="footer__logo-text"><span class="footer__logo-top">Wir-Machen</span><span class="footer__logo-bot">Handwerk.de</span></span>
         </div>
-        <p>Generalunternehmen für Schadensfälle, Instandhaltung und Sanierung. Ihr zentraler Ansprechpartner für Hausverwaltungen, Versicherungen und gewerbliche Auftraggeber.</p>
-        <a href="https://portal.wir-machen-handwerk.de" target="_blank" rel="noopener" class="btn btn--outline btn--sm">Portal Login</a>
+        <p>Generalunternehmen für koordinierte Handwerksleistungen – digital, strukturiert und zuverlässig.</p>
+        <a href="https://portal.wir-machen-handwerk.de" target="_blank" rel="noopener" class="btn btn--outline btn--sm">Portal Login →</a>
       </div>
       <div>
         <p class="footer__heading">Leistungen</p>
         <ul class="footer__links">
-          <li><a href="/leistungen/">Leistungsübersicht</a></li>
-          <li><a href="/schadensregulierung-im-versicherungsfall/">Schadensregulierung</a></li>
           <li><a href="/malerarbeiten/">Malerarbeiten</a></li>
           <li><a href="/fliesenlegen/">Fliesenarbeiten</a></li>
+          <li><a href="/bodenlegen/">Bodenbeläge</a></li>
+          <li><a href="/estricharbeiten/">Estricharbeiten</a></li>
+          <li><a href="/verputzarbeiten/">Verputzarbeiten</a></li>
           <li><a href="/badsanierung/">Badsanierung</a></li>
         </ul>
       </div>
@@ -477,19 +600,16 @@
         <p class="footer__heading">Unternehmen</p>
         <ul class="footer__links">
           <li><a href="/digitales-portal/">Digitales Portal</a></li>
+          <li><a href="/leistungen/">Leistungen</a></li>
           <li><a href="/schadensmeldung/">Schadensfall melden</a></li>
           <li><a href="/kontakt/">Kontakt</a></li>
           <li><a href="/impressum/">Impressum</a></li>
-          <li><a href="/datenschutz/">Datenschutz</a></li>
         </ul>
       </div>
     </div>
     <div class="footer__bottom">
-      <p class="footer__copy">© 2024 Wir machen Handwerk. Alle Rechte vorbehalten.</p>
-      <nav class="footer__legal" aria-label="Rechtliche Links">
-        <a href="/impressum/">Impressum</a>
-        <a href="/datenschutz/">Datenschutz</a>
-      </nav>
+      <p class="footer__copy">© 2025 Wir machen Handwerk. Alle Rechte vorbehalten.</p>
+      <nav class="footer__legal" aria-label="Rechtliche Links"><a href="/impressum/">Impressum</a><a href="/datenschutz/">Datenschutz</a></nav>
     </div>
   </div>
 </footer>

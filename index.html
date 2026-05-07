@@ -3,23 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wir machen Handwerk – Generalunternehmen für Schadensfälle, Instandhaltung und Sanierung</title>
-  <meta name="description" content="Wir machen Handwerk ist Ihr Generalunternehmen für Hausverwaltungen, Versicherungen und gewerbliche Auftraggeber. Strukturierte Abwicklung von Reparaturen, Versicherungsschäden und Sanierungen – mit einem zentralen Ansprechpartner.">
+  <title>Wir machen Handwerk – Generalunternehmen für Hausverwaltungen und Versicherungen</title>
+  <meta name="description" content="Wir machen Handwerk koordiniert alle Handwerksleistungen für Hausverwaltungen, Versicherungen und gewerbliche Auftraggeber – mit digitalem Portal, einem zentralen Ansprechpartner und strukturierter Abwicklung.">
   <link rel="canonical" href="https://www.wir-machen-handwerk.de/">
   <link rel="stylesheet" href="/css/style.css">
-  <!-- Open Graph -->
-  <meta property="og:title" content="Wir machen Handwerk – Generalunternehmen für Schadensfälle & Sanierung">
-  <meta property="og:description" content="Strukturierte Abwicklung von Schadensfällen, Reparaturen und Sanierungen für Hausverwaltungen, Versicherungen und gewerbliche Auftraggeber.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.wir-machen-handwerk.de/">
 </head>
 <body>
 
-<!-- Navigation -->
+<!-- NAVIGATION -->
 <nav class="nav" role="navigation" aria-label="Hauptnavigation">
   <div class="container nav__inner">
     <a href="/" class="nav__logo" aria-label="Wir machen Handwerk – zur Startseite">
-      <svg class="nav__logo-icon" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- Logo: /images/logo/logo-white.svg (auf dunkel) / logo.svg (auf hell) -->
+      <svg class="nav__logo-icon" viewBox="0 0 42 42" fill="none" aria-hidden="true">
         <rect width="42" height="42" rx="6" fill="#1A3F6F"/>
         <polygon points="21,7 36,19 33,19 33,35 9,35 9,19 6,19" fill="white" opacity="0.9"/>
         <rect x="15" y="24" width="12" height="7" rx="1.5" fill="#F07800"/>
@@ -30,12 +26,14 @@
         <span class="nav__logo-bot">Handwerk.de</span>
       </span>
     </a>
-
     <ul class="nav__links" role="list">
       <li><a href="/" class="active">Start</a></li>
       <li><a href="/digitales-portal/">Digitales Portal</a></li>
       <li class="nav__dropdown">
-        <span class="nav__dropdown-toggle" tabindex="0">Für wen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></span>
+        <span class="nav__dropdown-toggle" tabindex="0" role="button" aria-haspopup="true">
+          Für wen
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </span>
         <ul class="nav__dropdown-menu" role="list">
           <li><a href="/fuer-hausverwaltungen/">Hausverwaltungen</a></li>
           <li><a href="/fuer-versicherungen/">Versicherungen</a></li>
@@ -46,19 +44,17 @@
       <li><a href="/leistungen/">Leistungen</a></li>
       <li><a href="/kontakt/">Kontakt</a></li>
     </ul>
-
     <div class="nav__actions">
       <a href="/schadensmeldung/" class="btn btn--orange btn--sm">Schadensfall melden</a>
-      <a href="https://portal.wir-machen-handwerk.de" class="nav__login" target="_blank" rel="noopener">Portal Login</a>
+      <a href="https://portal.wir-machen-handwerk.de" class="nav__login" target="_blank" rel="noopener">Portal Login →</a>
     </div>
-
     <button class="nav__toggle" aria-label="Menü öffnen" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
 </nav>
 
-<!-- Mobile Nav -->
+<!-- MOBILE NAV -->
 <nav class="nav__mobile" aria-label="Mobile Navigation">
   <a href="/">Start</a>
   <a href="/digitales-portal/">Digitales Portal</a>
@@ -70,430 +66,610 @@
   <a href="/leistungen/">Leistungen</a>
   <a href="/kontakt/">Kontakt</a>
   <a href="/schadensmeldung/" class="btn btn--orange">Schadensfall melden</a>
-  <a href="https://portal.wir-machen-handwerk.de" target="_blank" rel="noopener" style="text-align:center;color:var(--mid);font-size:0.875rem;border-bottom:none;margin-top:0.5rem;">Portal Login →</a>
+  <a href="https://portal.wir-machen-handwerk.de" target="_blank" rel="noopener" class="nav__mobile-login">Portal Login →</a>
 </nav>
 
-<!-- Hero -->
 <main id="main">
+
+<!-- =============================================
+     HERO
+     ============================================= -->
 <section class="hero" aria-labelledby="hero-headline">
+  <div class="hero__bg">
+    <div class="hero__bg-gradient"></div>
+    <div class="hero__bg-grid"></div>
+    <div class="hero__bg-noise"></div>
+    <div class="hero__bg-glow"></div>
+  </div>
+
+  <div class="hero__inner">
+    <div class="container">
+      <div class="hero__grid">
+
+        <!-- Left: Content -->
+        <div class="hero__content">
+          <div class="hero__eyebrow">
+            <span class="hero__eyebrow-dot"></span>
+            Generalunternehmen für Hausverwaltungen
+          </div>
+          <h1 class="hero__headline" id="hero-headline">
+            Ein Ansprech&shy;partner.<br>
+            <em>Alles geregelt.</em>
+          </h1>
+          <p class="hero__sub">
+            Wir koordinieren alle handwerklichen Leistungen nach Schadensfällen, bei Instandhaltung und Sanierung – digital dokumentiert, strukturiert abgewickelt, transparent nachvollziehbar.
+          </p>
+          <div class="hero__actions">
+            <a href="/schadensmeldung/" class="btn btn--orange btn--lg">
+              Schadensfall melden
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+            <a href="/digitales-portal/" class="btn btn--outline btn--lg">
+              Portal kennenlernen
+            </a>
+          </div>
+          <div class="hero__trust">
+            <span class="hero__trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Für Hausverwaltungen
+            </span>
+            <span class="hero__trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Für Versicherungen
+            </span>
+            <span class="hero__trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Digitale Dokumentation
+            </span>
+            <span class="hero__trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              DSGVO-konform
+            </span>
+          </div>
+        </div>
+
+        <!-- Right: Portal Mockup Composition -->
+        <div class="hero__visual" aria-hidden="true">
+
+          <!-- Main Portal Window -->
+          <div class="portal-window">
+            <div class="portal-window__chrome">
+              <div class="portal-window__dots">
+                <div class="portal-window__dot"></div>
+                <div class="portal-window__dot"></div>
+                <div class="portal-window__dot"></div>
+              </div>
+              <div class="portal-window__url">portal.wir-machen-handwerk.de</div>
+            </div>
+            <div class="portal-ui">
+              <div class="portal-ui__sidebar">
+                <div class="portal-ui__logo-area">
+                  <div class="portal-ui__logo-bar"></div>
+                  <div class="portal-ui__logo-bar2"></div>
+                </div>
+                <div class="portal-ui__nav-item active">
+                  <div class="portal-ui__nav-dot"></div>
+                  <div class="portal-ui__nav-line"></div>
+                </div>
+                <div class="portal-ui__nav-item">
+                  <div class="portal-ui__nav-dot"></div>
+                  <div class="portal-ui__nav-line"></div>
+                </div>
+                <div class="portal-ui__nav-item">
+                  <div class="portal-ui__nav-dot"></div>
+                  <div class="portal-ui__nav-line"></div>
+                </div>
+                <div class="portal-ui__nav-item">
+                  <div class="portal-ui__nav-dot"></div>
+                  <div class="portal-ui__nav-line"></div>
+                </div>
+                <div class="portal-ui__nav-item">
+                  <div class="portal-ui__nav-dot"></div>
+                  <div class="portal-ui__nav-line"></div>
+                </div>
+                <div class="portal-ui__nav-spacer"></div>
+              </div>
+              <div class="portal-ui__main">
+                <div class="portal-ui__topbar">
+                  <div class="portal-ui__page-title"></div>
+                  <div class="portal-ui__badge"></div>
+                </div>
+                <div class="portal-ui__stats">
+                  <div class="portal-ui__stat">
+                    <div class="portal-ui__stat-num"></div>
+                    <div class="portal-ui__stat-label"></div>
+                  </div>
+                  <div class="portal-ui__stat">
+                    <div class="portal-ui__stat-num"></div>
+                    <div class="portal-ui__stat-label"></div>
+                  </div>
+                  <div class="portal-ui__stat">
+                    <div class="portal-ui__stat-num"></div>
+                    <div class="portal-ui__stat-label"></div>
+                  </div>
+                </div>
+                <div class="portal-ui__list">
+                  <div class="portal-ui__row">
+                    <div class="portal-ui__row-icon"></div>
+                    <div class="portal-ui__row-body">
+                      <div class="portal-ui__row-line1"></div>
+                      <div class="portal-ui__row-line2"></div>
+                    </div>
+                    <div class="portal-ui__row-status"></div>
+                  </div>
+                  <div class="portal-ui__row">
+                    <div class="portal-ui__row-icon orange"></div>
+                    <div class="portal-ui__row-body">
+                      <div class="portal-ui__row-line1"></div>
+                      <div class="portal-ui__row-line2"></div>
+                    </div>
+                    <div class="portal-ui__row-status orange-status"></div>
+                  </div>
+                  <div class="portal-ui__row">
+                    <div class="portal-ui__row-icon green"></div>
+                    <div class="portal-ui__row-body">
+                      <div class="portal-ui__row-line1"></div>
+                      <div class="portal-ui__row-line2"></div>
+                    </div>
+                    <div class="portal-ui__row-status blue-status"></div>
+                  </div>
+                  <div class="portal-ui__row">
+                    <div class="portal-ui__row-icon"></div>
+                    <div class="portal-ui__row-body">
+                      <div class="portal-ui__row-line1"></div>
+                      <div class="portal-ui__row-line2"></div>
+                    </div>
+                    <div class="portal-ui__row-status"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Card 1: top right -->
+          <div class="hero__float hero__float--1">
+            <div class="hero__float-icon hero__float-icon--green">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="hero__float-label">Abgeschlossen</div>
+            <div class="hero__float-value">12 Aufträge</div>
+          </div>
+
+          <!-- Floating Card 2: bottom right -->
+          <div class="hero__float hero__float--2">
+            <div class="hero__float-icon hero__float-icon--orange">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="hero__float-label">Reaktionszeit</div>
+            <div class="hero__float-value">unter 24 Std.</div>
+          </div>
+
+          <!-- Floating Card 3: left -->
+          <div class="hero__float hero__float--3">
+            <div class="hero__float-icon hero__float-icon--blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+            </div>
+            <div class="hero__float-label">Ansprechpartner</div>
+            <div class="hero__float-value">Zentral. Immer.</div>
+          </div>
+
+        </div><!-- .hero__visual -->
+      </div><!-- .hero__grid -->
+    </div><!-- .container -->
+  </div><!-- .hero__inner -->
+</section>
+
+<!-- =============================================
+     TRUST BAR
+     ============================================= -->
+<div class="trust-bar" role="complementary" aria-label="Leistungsübersicht">
   <div class="container">
-    <div class="hero__inner">
-      <span class="section-label">Generalunternehmen für B2B-Auftraggeber</span>
-      <h1 id="hero-headline">Ihr Generalunternehmen für <span>Schadensfälle, Instandhaltung und Sanierung</span></h1>
-      <p class="lead lead--white">
-        Wir machen Handwerk unterstützt Hausverwaltungen, Versicherungen und gewerbliche Auftraggeber bei der strukturierten Abwicklung von Reparaturen, Versicherungsschäden und Sanierungsmaßnahmen. Mit festen Ansprechpartnern, geprüften Handwerkspartnern und einem digitalen Portal für transparente Prozesse.
-      </p>
-      <div class="hero__ctas">
-        <a href="/schadensmeldung/" class="btn btn--orange btn--lg">Schadensfall melden</a>
-        <a href="/kontakt/" class="btn btn--outline btn--lg">Zusammenarbeit anfragen</a>
+    <div class="trust-bar__inner">
+      <span class="trust-bar__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        Für Hausverwaltungen
+      </span>
+      <span class="trust-bar__divider"></span>
+      <span class="trust-bar__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Für Versicherungen
+      </span>
+      <span class="trust-bar__divider"></span>
+      <span class="trust-bar__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        Digitale Abwicklung
+      </span>
+      <span class="trust-bar__divider"></span>
+      <span class="trust-bar__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        Fester Ansprechpartner
+      </span>
+      <span class="trust-bar__divider"></span>
+      <span class="trust-bar__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+        DSGVO-konform
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- =============================================
+     ZIELGRUPPEN
+     ============================================= -->
+<section class="section" aria-labelledby="zielgruppen-headline">
+  <div class="container">
+    <div class="section__header section__header--center">
+      <span class="section__label">Für wen wir arbeiten</span>
+      <h2 class="section__title" id="zielgruppen-headline">Professionelle Partner<br>im B2B-Bereich</h2>
+      <p class="section__sub">Wir machen Handwerk arbeitet ausschließlich mit gewerblichen Auftraggebern. Kein Endkundengeschäft, keine Einzelaufträge – sondern strukturierte Zusammenarbeit auf Augenhöhe.</p>
+    </div>
+    <div class="target-grid">
+      <div class="target-card animate">
+        <div class="target-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3 class="target-card__title">Hausverwaltungen</h3>
+        <p class="target-card__text">Sie verwalten Objekte und brauchen einen zuverlässigen Partner, der Handwerksleistungen koordiniert und abwickelt – ohne dass Sie selbst den Überblick über Gewerke, Termine und Dokumentation verlieren.</p>
+        <a href="/fuer-hausverwaltungen/" class="target-card__link">
+          Mehr erfahren
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+      </div>
+      <div class="target-card animate animate--delay-1">
+        <div class="target-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3 class="target-card__title">Versicherungen</h3>
+        <p class="target-card__text">Schnelle Schadensbehebung, lückenlose Dokumentation und koordinierte Abwicklung im Versicherungsfall. Wir unterstützen Versicherer und ihre Bestandsnehmer bei der strukturierten Regulierung.</p>
+        <a href="/fuer-versicherungen/" class="target-card__link">
+          Mehr erfahren
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+      </div>
+      <div class="target-card animate animate--delay-2">
+        <div class="target-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+        <h3 class="target-card__title">Sachverständige</h3>
+        <p class="target-card__text">Als neutraler Koordinator unterstützen wir Sachverständige bei der Begutachtung und Abwicklung – mit klarer Kommunikation, verlässlicher Umsetzung und nachvollziehbarer Dokumentation.</p>
+        <a href="/fuer-sachverstaendige/" class="target-card__link">
+          Mehr erfahren
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Handwerker as smaller extra card -->
+    <div class="partner-strip animate">
+      <div class="partner-strip__content">
+        <div class="partner-strip__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="2" width="22" height="22" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <div class="partner-strip__text">
+          <strong>Für Handwerker</strong>
+          <p>Handwerksbetriebe, die als Subunternehmer in unser Netzwerk eingebunden werden möchten – auf Einladung.</p>
+        </div>
+      </div>
+      <a href="/fuer-handwerker/" class="btn btn--outline-blue btn--sm">Zur Handwerker-Seite</a>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     LEISTUNGEN / GEWERKE
+     ============================================= -->
+<section class="section section--gray" aria-labelledby="leistungen-headline">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__label">Was wir koordinieren</span>
+      <h2 class="section__title" id="leistungen-headline">Alle Gewerke.<br>Eine Verantwortung.</h2>
+      <p class="section__sub">Als Generalunternehmen koordinieren wir alle notwendigen Handwerksleistungen – vom ersten Schaden bis zur vollständigen Instandsetzung. Sie haben einen Ansprechpartner, wir haben alles im Griff.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card animate">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="service-card__title">Schadensregulierung</div>
+        <p class="service-card__text">Koordinierte Abwicklung von Versicherungsschäden – vom Schaden bis zur vollständigen Instandsetzung.</p>
+        <a href="/schadensregulierung-im-versicherungsfall/" class="service-card__link">Details →</a>
+      </div>
+      <div class="service-card animate animate--delay-1">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        </div>
+        <div class="service-card__title">Malerarbeiten</div>
+        <p class="service-card__text">Innen- und Außenarbeiten, Renovierungen und Nacharbeiten nach Schadensfällen.</p>
+        <a href="/malerarbeiten/" class="service-card__link">Details →</a>
+      </div>
+      <div class="service-card animate animate--delay-2">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </div>
+        <div class="service-card__title">Fliesenarbeiten</div>
+        <p class="service-card__text">Bad, Küche, Wohn- und Gewerbebereiche – Neubau, Sanierung und Schadensersatz.</p>
+        <a href="/fliesenlegen/" class="service-card__link">Details →</a>
+      </div>
+      <div class="service-card animate animate--delay-3">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9v11h18V9"/><path d="M3 9l9-6 9 6"/><line x1="3" y1="9" x2="21" y2="9"/></svg>
+        </div>
+        <div class="service-card__title">Bodenbeläge</div>
+        <p class="service-card__text">Parkett, Laminat, Vinyl und weitere Bodenbeläge – fachgerecht verlegt.</p>
+        <a href="/bodenlegen/" class="service-card__link">Details →</a>
+      </div>
+      <div class="service-card animate">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        </div>
+        <div class="service-card__title">Estricharbeiten</div>
+        <p class="service-card__text">Estrich als Untergrund für Bodenbeläge – präzise ausgeführt nach Wasserschäden und Sanierungen.</p>
+        <a href="/estricharbeiten/" class="service-card__link">Details →</a>
+      </div>
+      <div class="service-card animate animate--delay-1">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>
+        </div>
+        <div class="service-card__title">Verputzarbeiten</div>
+        <p class="service-card__text">Innen- und Außenputz, Sanierputz nach Feuchteschäden und Vorbereitung für Malerarbeiten.</p>
+        <a href="/verputzarbeiten/" class="service-card__link">Details →</a>
+      </div>
+      <div class="service-card animate animate--delay-2">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <div class="service-card__title">Badsanierung</div>
+        <p class="service-card__text">Komplette Badsanierungen koordiniert aus einer Hand – Fliesen, Sanitär und alle Folgegewerke.</p>
+        <a href="/badsanierung/" class="service-card__link">Details →</a>
+      </div>
+      <div class="service-card service-card--overview animate animate--delay-3">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </div>
+        <div class="service-card__title">Alle Leistungen</div>
+        <p class="service-card__text">Übersicht aller koordinierten Gewerke und Leistungsbereiche für gewerbliche Auftraggeber.</p>
+        <a href="/leistungen/" class="service-card__link">Zur Übersicht →</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Trust Bar -->
-<div class="trust-bar" role="complementary" aria-label="Vertrauenssignale">
+<!-- =============================================
+     STATS BAR
+     ============================================= -->
+<div class="stats-bar" role="complementary" aria-label="Kennzahlen">
   <div class="container">
-    <div class="trust-bar__inner">
-      <div class="trust-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-        Ein zentraler Ansprechpartner
+    <div class="stats-grid">
+      <div class="stat-item animate">
+        <div class="stat-item__number">1<span>×</span></div>
+        <div class="stat-item__label">Ansprechpartner für alle Gewerke</div>
       </div>
-      <div class="trust-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-        Digitales Portal für alle Prozesse
+      <div class="stat-item animate animate--delay-1">
+        <div class="stat-item__number"><span>100</span>%</div>
+        <div class="stat-item__label">Digitale Dokumentation im Portal</div>
       </div>
-      <div class="trust-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-        Geprüfte Handwerkspartner
+      <div class="stat-item animate animate--delay-2">
+        <div class="stat-item__number">24<span>h</span></div>
+        <div class="stat-item__label">Reaktionszeit bei Schadensfällen</div>
       </div>
-      <div class="trust-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        DSGVO-konforme Dokumentation
-      </div>
-      <div class="trust-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-        Transparente Abwicklung
+      <div class="stat-item animate animate--delay-3">
+        <div class="stat-item__number">0<span>€</span></div>
+        <div class="stat-item__label">Kosten für Hausverwaltungen</div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Für wen wir arbeiten -->
-<section class="section" id="fuer-wen" aria-labelledby="fuer-wen-headline">
-  <div class="container">
-    <div class="section__header">
-      <span class="section-label">Unsere Auftraggeber</span>
-      <h2 id="fuer-wen-headline">Für wen wir arbeiten</h2>
-      <p class="lead">Wir machen Handwerk ist der spezialisierte Partner für Auftraggeber, die verlässliche Koordination, klare Zuständigkeiten und strukturierte Prozesse benötigen.</p>
-    </div>
+<!-- =============================================
+     PORTAL SECTION
+     ============================================= -->
+<section class="portal-section section" aria-labelledby="portal-headline">
+  <div class="portal-section__bg-gradient"></div>
+  <div class="portal-section__bg-grid"></div>
+  <div class="portal-section__inner">
+    <div class="container">
+      <div class="portal-section__grid">
 
-    <div class="cards cards--5" role="list">
-      <article class="card target-card" role="listitem">
-        <div class="card__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-        </div>
-        <h3>Hausverwaltungen</h3>
-        <p>Strukturierte Abwicklung von Instandhaltung, Reparaturen und Schadensfällen für verwaltete Immobilien.</p>
-        <a href="/fuer-hausverwaltungen/" class="card__link">Mehr erfahren →</a>
-      </article>
+        <!-- Left: Features -->
+        <div>
+          <span class="section__label">Digitales WMH Portal</span>
+          <h2 class="section__title" id="portal-headline">Transparenz in Echtzeit</h2>
+          <p class="section__sub portal-section__sub">Unser eigens entwickeltes Portal macht die Zusammenarbeit transparent und effizient. Jeder Beteiligte sieht genau das, was für ihn relevant ist.</p>
 
-      <article class="card target-card" role="listitem">
-        <div class="card__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-        </div>
-        <h3>Versicherungen</h3>
-        <p>Nachvollziehbare Schadensregulierung mit lückenloser Dokumentation und strukturierter Berichterstattung.</p>
-        <a href="/fuer-versicherungen/" class="card__link">Mehr erfahren →</a>
-      </article>
-
-      <article class="card target-card" role="listitem">
-        <div class="card__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        </div>
-        <h3>Sachverständige</h3>
-        <p>Fachkundige Koordination von Begutachtungen und Schadensfeststellungen mit zuverlässiger Dokumentation.</p>
-        <a href="/fuer-sachverstaendige/" class="card__link">Mehr erfahren →</a>
-      </article>
-
-      <article class="card target-card" role="listitem">
-        <div class="card__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
-        </div>
-        <h3>Gewerbl. Auftraggeber</h3>
-        <p>Verlässlicher Partner für Unternehmen mit Immobilienbestand – von der Reparatur bis zur umfassenden Sanierung.</p>
-        <a href="/kontakt/" class="card__link">Anfrage stellen →</a>
-      </article>
-
-      <article class="card target-card" role="listitem">
-        <div class="card__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-        </div>
-        <h3>Handwerker als Partner</h3>
-        <p>Wir koordinieren Aufträge, übernehmen die Kommunikation und ermöglichen Ihnen fokussiertes Arbeiten.</p>
-        <a href="/fuer-handwerker/" class="card__link">Als Partner bewerben →</a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- Was wir übernehmen -->
-<section class="section section--gray" id="leistungen" aria-labelledby="leistungen-headline">
-  <div class="container">
-    <div class="section__header">
-      <span class="section-label">Leistungsumfang</span>
-      <h2 id="leistungen-headline">Was wir übernehmen</h2>
-      <p class="lead">Von der ersten Schadensmeldung bis zur abgeschlossenen Dokumentation – wir koordinieren alle Gewerke und behalten die Übersicht.</p>
-    </div>
-
-    <div class="services-grid" role="list">
-      <div class="service-item" role="listitem">
-        <div class="service-item__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-        </div>
-        <strong>Schadensfälle</strong>
-      </div>
-      <div class="service-item" role="listitem">
-        <div class="service-item__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-        </div>
-        <strong>Reparaturen</strong>
-      </div>
-      <div class="service-item" role="listitem">
-        <div class="service-item__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-        </div>
-        <strong>Instandhaltung</strong>
-      </div>
-      <div class="service-item" role="listitem">
-        <div class="service-item__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
-        </div>
-        <strong>Sanierung</strong>
-      </div>
-      <div class="service-item" role="listitem">
-        <div class="service-item__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 13.5V17a2 2 0 002 2h16a2 2 0 002-2v-3.5"/><path d="M12 2L4 9h16L12 2z"/></svg>
-        </div>
-        <strong>Malerarbeiten</strong>
-      </div>
-      <div class="service-item" role="listitem">
-        <div class="service-item__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-        </div>
-        <strong>Fliesenarbeiten</strong>
-      </div>
-      <div class="service-item" role="listitem">
-        <div class="service-item__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="20" width="20" height="2"/><rect x="2" y="16" width="20" height="2" opacity="0.5"/><rect x="2" y="12" width="20" height="2" opacity="0.3"/></svg>
-        </div>
-        <strong>Bodenarbeiten</strong>
-      </div>
-      <div class="service-item" role="listitem">
-        <div class="service-item__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
-        </div>
-        <strong>Trockenbau</strong>
-      </div>
-      <div class="service-item" role="listitem">
-        <div class="service-item__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-        </div>
-        <strong>Wasserschäden</strong>
-      </div>
-      <div class="service-item" role="listitem">
-        <div class="service-item__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
-        </div>
-        <strong>Kleinreparaturen</strong>
-      </div>
-      <div class="service-item" role="listitem">
-        <div class="service-item__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
-        </div>
-        <strong>Verputzarbeiten</strong>
-      </div>
-      <div class="service-item" role="listitem">
-        <div class="service-item__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 2H7a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/><path d="M17 2h-2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/><path d="M9 14H7a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2z"/><path d="M17 14h-2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2z"/></svg>
-        </div>
-        <strong>Badsanierung</strong>
-      </div>
-    </div>
-
-    <div class="mt-4">
-      <a href="/leistungen/" class="btn btn--outline-blue">Alle Leistungen ansehen</a>
-    </div>
-  </div>
-</section>
-
-<!-- WMH Portal -->
-<section class="section" id="portal" aria-labelledby="portal-headline">
-  <div class="container">
-    <div class="two-col">
-      <div>
-        <span class="section-label">Digitales WMH Portal</span>
-        <h2 id="portal-headline">Transparente Prozesse – alles an einem Ort</h2>
-        <p class="lead mt-2">Das WMH Portal ist unser digitales Arbeitsportal für Auftraggeber, Handwerkspartner und interne Teams. Es bündelt Aufträge, Dokumente, Kommunikation und Status in einem System.</p>
-
-        <div class="icon-list mt-3">
-          <div class="icon-list__item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-            Aufträge digital erfassen und verfolgen
-          </div>
-          <div class="icon-list__item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-            Objekte und Liegenschaften verwalten
-          </div>
-          <div class="icon-list__item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-            Dokumente und Fotos hochladen
-          </div>
-          <div class="icon-list__item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            Kommunikation im Fallkontext bündeln
-          </div>
-          <div class="icon-list__item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            Handwerkspartner koordinieren
-          </div>
-          <div class="icon-list__item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            Berichte und Nachweise DSGVO-konform sichern
-          </div>
-        </div>
-
-        <div class="highlight-box mt-3">
-          <strong>Zugang nur nach Einrichtung:</strong> Das Portal ist kein öffentliches Produkt. Der Zugang wird ausschließlich nach bestehender Zusammenarbeit oder auf Einladung bereitgestellt.
-        </div>
-
-        <div class="mt-3" style="display:flex;gap:1rem;flex-wrap:wrap;">
-          <a href="/digitales-portal/" class="btn btn--blue">Portal kennenlernen</a>
-          <a href="/kontakt/" class="btn btn--outline-blue">Zusammenarbeit anfragen</a>
-        </div>
-      </div>
-
-      <div>
-        <div class="portal-preview" role="img" aria-label="Screenshot des WMH Portals">
-          <div class="portal-preview__bar">
-            <div class="portal-preview__dot"></div>
-            <div class="portal-preview__dot"></div>
-            <div class="portal-preview__dot"></div>
-            <div class="portal-preview__url">portal.wir-machen-handwerk.de</div>
-          </div>
-          <div class="portal-preview__content">
-            <div class="portal-preview__sidebar">
-              <div class="portal-preview__nav-item active"></div>
-              <div class="portal-preview__nav-item"></div>
-              <div class="portal-preview__nav-item"></div>
-              <div class="portal-preview__nav-item"></div>
-              <div class="portal-preview__nav-item"></div>
+          <div class="portal-feature-list animate">
+            <div class="portal-feature-item">
+              <div class="portal-feature-item__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              </div>
+              <div>
+                <h3>Vollständiges Fallmanagement</h3>
+                <p>Vom Schaden bis zur Rechnung – alles in einem System. Kein Tool-Wechsel, keine Medienbrüche.</p>
+              </div>
             </div>
-            <div class="portal-preview__main">
-              <div class="portal-preview__stat">
-                <div class="portal-preview__stat-num">24</div>
-                <div class="portal-preview__stat-label">Aktive Aufträge</div>
+            <div class="portal-feature-item">
+              <div class="portal-feature-item__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
               </div>
-              <div class="portal-preview__stat">
-                <div class="portal-preview__stat-num">8</div>
-                <div class="portal-preview__stat-label">Offene Fälle</div>
+              <div>
+                <h3>Statusübersicht in Echtzeit</h3>
+                <p>Alle Beteiligten sehen den aktuellen Bearbeitungsstand – ohne E-Mail-Rückfragen.</p>
               </div>
-              <div class="portal-preview__stat">
-                <div class="portal-preview__stat-num">142</div>
-                <div class="portal-preview__stat-label">Abgeschlossen</div>
+            </div>
+            <div class="portal-feature-item">
+              <div class="portal-feature-item__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
               </div>
-              <div class="portal-preview__row">
-                <div class="portal-preview__row-text">Wasserschaden Musterstraße 12</div>
-                <div class="portal-preview__badge portal-preview__badge--orange">In Bearbeitung</div>
+              <div>
+                <h3>Digitale Signatur & Dokumente</h3>
+                <p>Angebote digital unterschreiben, Dokumente direkt im Fall hinterlegt – kein Papier, kein Aufwand.</p>
               </div>
-              <div class="portal-preview__row">
-                <div class="portal-preview__row-text">Malerarbeiten Wohnanlage Nord</div>
-                <div class="portal-preview__badge portal-preview__badge--green">Abgeschlossen</div>
+            </div>
+            <div class="portal-feature-item">
+              <div class="portal-feature-item__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
               </div>
-              <div class="portal-preview__row">
-                <div class="portal-preview__row-text">Fliesenschaden Erdgeschoss</div>
-                <div class="portal-preview__badge portal-preview__badge--blue">Prüfung</div>
+              <div>
+                <h3>Drei Portale – eine Plattform</h3>
+                <p>Admin, Partner und Handwerker haben jeweils eigene, rollenspezifische Zugänge.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="portal-feature-cta">
+            <a href="/digitales-portal/" class="btn btn--orange">Portal entdecken</a>
+            <a href="https://portal.wir-machen-handwerk.de" target="_blank" rel="noopener" class="btn btn--outline">Portal Login →</a>
+          </div>
+        </div>
+
+        <!-- Right: Portal Mockup (large) -->
+        <div class="animate animate--delay-2">
+          <div class="portal-mockup-lg">
+            <div class="portal-mockup-lg__chrome">
+              <div class="portal-window__dots">
+                <div class="portal-window__dot"></div>
+                <div class="portal-window__dot"></div>
+                <div class="portal-window__dot"></div>
+              </div>
+              <div class="portal-window__url">portal.wir-machen-handwerk.de</div>
+            </div>
+            <!-- Screenshot Slot: replace with real dashboard screenshot -->
+            <div class="portal-screenshot-slot">
+              <div class="portal-screenshot-slot__label">
+                <strong>Portal Screenshot – Dashboard</strong>
+                <code>/images/portal/dashboard.png</code>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </div>
 </section>
 
-<!-- Ablauf -->
-<section class="section section--gray" id="ablauf" aria-labelledby="ablauf-headline">
+<!-- =============================================
+     ABLAUF / PROZESS
+     ============================================= -->
+<section class="process-section section" aria-labelledby="ablauf-headline">
   <div class="container">
     <div class="section__header section__header--center">
-      <span class="section-label">So funktioniert die Zusammenarbeit</span>
-      <h2 id="ablauf-headline">Strukturiert von Anfang bis Ende</h2>
-      <p class="lead">Jeder Auftrag folgt einem klar definierten Prozess – von der ersten Meldung bis zur lückenlosen Dokumentation.</p>
+      <span class="section__label">Unser Ablauf</span>
+      <h2 class="section__title" id="ablauf-headline">So funktioniert die Zusammenarbeit</h2>
+      <p class="section__sub">Von der ersten Meldung bis zum Abschluss – strukturiert, transparent und ohne Reibungsverluste auf Ihrer Seite.</p>
     </div>
-
-    <div class="steps steps--row" role="list">
-      <div class="step" role="listitem">
-        <div class="step__number" aria-hidden="true">01</div>
-        <h3>Anfrage oder Schadensmeldung</h3>
-        <p>Sie melden einen Schadensfall oder eine Reparatur – telefonisch, per E-Mail oder direkt im Portal.</p>
+    <div class="process-grid">
+      <div class="process-step animate">
+        <div class="process-step__num">1</div>
+        <div class="process-step__title">Meldung</div>
+        <p class="process-step__text">Sie melden den Schaden oder den Auftrag – per Formular, Telefon oder direkt über das Portal.</p>
       </div>
-      <div class="step" role="listitem">
-        <div class="step__number" aria-hidden="true">02</div>
-        <h3>Prüfung und Koordination</h3>
-        <p>Wir prüfen den Fall, klären den Umfang und koordinieren die richtigen Handwerkspartner.</p>
+      <div class="process-step animate animate--delay-1">
+        <div class="process-step__num">2</div>
+        <div class="process-step__title">Bewertung</div>
+        <p class="process-step__text">Wir klären den Umfang, koordinieren die Begutachtung und erstellen ein strukturiertes Angebot.</p>
       </div>
-      <div class="step" role="listitem">
-        <div class="step__number" aria-hidden="true">03</div>
-        <h3>Einsatz der Handwerkspartner</h3>
-        <p>Geprüfte Fachbetriebe übernehmen die Ausführung – wir behalten die Übersicht und bleiben Ihr Ansprechpartner.</p>
+      <div class="process-step animate animate--delay-2">
+        <div class="process-step__num">3</div>
+        <div class="process-step__title">Koordination</div>
+        <p class="process-step__text">Wir beauftragen und koordinieren alle notwendigen Gewerke – Sie haben nur einen Ansprechpartner.</p>
       </div>
-      <div class="step" role="listitem">
-        <div class="step__number" aria-hidden="true">04</div>
-        <h3>Dokumentation im Portal</h3>
-        <p>Fotos, Berichte und Statusmeldungen werden im Portal erfasst – für Sie jederzeit einsehbar.</p>
+      <div class="process-step animate animate--delay-3">
+        <div class="process-step__num">4</div>
+        <div class="process-step__title">Ausführung</div>
+        <p class="process-step__text">Die Arbeiten werden fachgerecht ausgeführt. Sie verfolgen den Fortschritt jederzeit im Portal.</p>
       </div>
-      <div class="step" role="listitem">
-        <div class="step__number" aria-hidden="true">05</div>
-        <h3>Abschluss und Nachweise</h3>
-        <p>Nach Abschluss erhalten Sie alle Nachweise und Dokumente in strukturierter Form.</p>
+      <div class="process-step animate animate--delay-4">
+        <div class="process-step__num">5</div>
+        <div class="process-step__title">Abschluss</div>
+        <p class="process-step__text">Dokumentation, Abnahme, Abrechnung – alles strukturiert abgeschlossen und digital hinterlegt.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Vorteile -->
-<section class="section" id="vorteile" aria-labelledby="vorteile-headline">
+<!-- =============================================
+     VORTEILE
+     ============================================= -->
+<section class="section" aria-labelledby="vorteile-headline">
   <div class="container">
-    <div class="two-col">
-      <div>
-        <span class="section-label">Warum Wir machen Handwerk</span>
-        <h2 id="vorteile-headline">Was Sie konkret gewinnen</h2>
-        <p class="lead mt-2">Weniger Aufwand für Ihre Koordination. Mehr Transparenz über den Bearbeitungsstand. Saubere Dokumentation für Versicherungen und Eigentümer.</p>
-
-        <a href="/kontakt/" class="btn btn--orange mt-4">Zusammenarbeit anfragen</a>
+    <div class="section__header section__header--center">
+      <span class="section__label">Warum Wir machen Handwerk</span>
+      <h2 class="section__title" id="vorteile-headline">Was uns auszeichnet</h2>
+    </div>
+    <div class="benefit-grid">
+      <div class="benefit-card animate">
+        <div class="benefit-card__icon benefit-card__icon--blue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3 class="benefit-card__title">Zentraler Ansprechpartner</h3>
+        <p class="benefit-card__text">Ein Kontakt für alle Gewerke, alle Fragen, alle Abstimmungen. Kein Koordinationsaufwand auf Ihrer Seite.</p>
       </div>
-
-      <div class="icon-list" role="list">
-        <div class="benefit" role="listitem">
-          <div class="benefit__check" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-          </div>
-          <div>
-            <h3>Ein Ansprechpartner</h3>
-            <p>Sie kommunizieren immer mit Wir machen Handwerk – nicht mit jedem Gewerk separat.</p>
-          </div>
+      <div class="benefit-card animate animate--delay-1">
+        <div class="benefit-card__icon benefit-card__icon--orange">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
         </div>
-        <div class="benefit" role="listitem">
-          <div class="benefit__check" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-          </div>
-          <div>
-            <h3>Klare Zuständigkeiten</h3>
-            <p>Jeder Auftrag hat eine eindeutige Verantwortlichkeit – keine Missverständnisse, kein Abschieben.</p>
-          </div>
+        <h3 class="benefit-card__title">Eigene Plattform</h3>
+        <p class="benefit-card__text">Kein Flickenteppich aus fremden Tools. Unser selbst entwickeltes Portal bildet den gesamten Prozess End-to-End ab.</p>
+      </div>
+      <div class="benefit-card animate animate--delay-2">
+        <div class="benefit-card__icon benefit-card__icon--blue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
-        <div class="benefit" role="listitem">
-          <div class="benefit__check" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-          </div>
-          <div>
-            <h3>Weniger Abstimmungsaufwand</h3>
-            <p>Wir übernehmen die Koordination zwischen Gewerken, Mietern und Sachverständigen.</p>
-          </div>
+        <h3 class="benefit-card__title">Skalierbar und zuverlässig</h3>
+        <p class="benefit-card__text">Ob ein Auftrag oder hundert – wir skalieren mit Ihrem Bedarf. Unser Handwerkernetzwerk wächst mit den Anforderungen.</p>
+      </div>
+      <div class="benefit-card animate">
+        <div class="benefit-card__icon benefit-card__icon--orange">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
         </div>
-        <div class="benefit" role="listitem">
-          <div class="benefit__check" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-          </div>
-          <div>
-            <h3>Bessere Dokumentation</h3>
-            <p>Fotos, Berichte und Statusmeldungen werden strukturiert erfasst und sind jederzeit abrufbar.</p>
-          </div>
+        <h3 class="benefit-card__title">Keine Kosten für Verwalter</h3>
+        <p class="benefit-card__text">Hausverwaltungen nutzen unsere Leistungen ohne direkte Kosten – die Vergütung erfolgt über die ausgeführten Gewerke.</p>
+      </div>
+      <div class="benefit-card animate animate--delay-1">
+        <div class="benefit-card__icon benefit-card__icon--gray">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
         </div>
-        <div class="benefit" role="listitem">
-          <div class="benefit__check" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-          </div>
-          <div>
-            <h3>Schnellere Bearbeitung</h3>
-            <p>Direkter Zugriff auf unser Partnernetzwerk ermöglicht kürzere Reaktionszeiten.</p>
-          </div>
+        <h3 class="benefit-card__title">DSGVO-konform</h3>
+        <p class="benefit-card__text">Lückenlose Änderungshistorie, rollenspezifische Datensicht und revisionssichere Protokollierung aller Vorgänge.</p>
+      </div>
+      <div class="benefit-card animate animate--delay-2">
+        <div class="benefit-card__icon benefit-card__icon--blue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
         </div>
-        <div class="benefit" role="listitem">
-          <div class="benefit__check" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-          </div>
-          <div>
-            <h3>Transparente Prozesse</h3>
-            <p>Bearbeitungsstände, Fotos und Unterlagen sind für alle Beteiligten im Portal einsehbar.</p>
-          </div>
-        </div>
+        <h3 class="benefit-card__title">Transparenz in Echtzeit</h3>
+        <p class="benefit-card__text">Alle Beteiligten sehen den aktuellen Status – ohne Rückfragen, ohne Wartezeit, ohne manuelle Updates.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Final CTA -->
+<!-- =============================================
+     CTA BANNER
+     ============================================= -->
 <section class="cta-banner" aria-labelledby="cta-headline">
   <div class="container">
-    <span class="section-label">Jetzt starten</span>
-    <h2 id="cta-headline">Bereit für strukturierte Zusammenarbeit?</h2>
-    <p class="lead lead--white">Sprechen Sie uns an. Wir erläutern Ihnen unsere Arbeitsweise und klären, wie eine Zusammenarbeit für Sie aussehen kann.</p>
+    <span class="cta-banner__label">Jetzt starten</span>
+    <h2 class="cta-banner__title" id="cta-headline">Bereit für strukturierte<br>Handwerkskoordination?</h2>
+    <p class="cta-banner__text">Melden Sie Ihren ersten Schadensfall oder nehmen Sie Kontakt für eine unverbindliche Zusammenarbeit auf. Wir melden uns innerhalb von 24 Stunden.</p>
     <div class="cta-banner__actions">
-      <a href="/kontakt/" class="btn btn--orange btn--lg">Zusammenarbeit anfragen</a>
-      <a href="/schadensmeldung/" class="btn btn--outline btn--lg">Schadensfall melden</a>
+      <a href="/schadensmeldung/" class="btn btn--orange btn--lg">
+        Schadensfall oder Auftrag melden
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+      </a>
+      <a href="/kontakt/" class="btn btn--outline btn--lg">Zusammenarbeit anfragen</a>
     </div>
   </div>
 </section>
+
 </main>
 
-<!-- Footer -->
+<!-- FOOTER -->
 <footer class="footer" role="contentinfo">
   <div class="container">
     <div class="footer__grid">
       <div class="footer__brand">
         <div class="footer__logo">
-          <svg width="36" height="36" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 42 42" fill="none" aria-hidden="true">
             <rect width="42" height="42" rx="6" fill="#1A3F6F"/>
             <polygon points="21,7 36,19 33,19 33,35 9,35 9,19 6,19" fill="white" opacity="0.9"/>
             <rect x="15" y="24" width="12" height="7" rx="1.5" fill="#F07800"/>
@@ -504,22 +680,20 @@
             <span class="footer__logo-bot">Handwerk.de</span>
           </span>
         </div>
-        <p>Generalunternehmen für Schadensfälle, Instandhaltung und Sanierung. Ihr zentraler Ansprechpartner für Hausverwaltungen, Versicherungen und gewerbliche Auftraggeber.</p>
-        <a href="https://portal.wir-machen-handwerk.de" target="_blank" rel="noopener" class="btn btn--outline btn--sm">Portal Login</a>
+        <p>Generalunternehmen für koordinierte Handwerksleistungen – digital, strukturiert und zuverlässig.</p>
+        <a href="https://portal.wir-machen-handwerk.de" target="_blank" rel="noopener" class="btn btn--outline btn--sm">Portal Login →</a>
       </div>
-
       <div>
         <p class="footer__heading">Leistungen</p>
         <ul class="footer__links">
-          <li><a href="/leistungen/">Leistungsübersicht</a></li>
-          <li><a href="/schadensregulierung-im-versicherungsfall/">Schadensregulierung</a></li>
           <li><a href="/malerarbeiten/">Malerarbeiten</a></li>
           <li><a href="/fliesenlegen/">Fliesenarbeiten</a></li>
-          <li><a href="/bodenlegen/">Bodenarbeiten</a></li>
+          <li><a href="/bodenlegen/">Bodenbeläge</a></li>
+          <li><a href="/estricharbeiten/">Estricharbeiten</a></li>
+          <li><a href="/verputzarbeiten/">Verputzarbeiten</a></li>
           <li><a href="/badsanierung/">Badsanierung</a></li>
         </ul>
       </div>
-
       <div>
         <p class="footer__heading">Für wen</p>
         <ul class="footer__links">
@@ -529,21 +703,19 @@
           <li><a href="/fuer-handwerker/">Handwerker</a></li>
         </ul>
       </div>
-
       <div>
         <p class="footer__heading">Unternehmen</p>
         <ul class="footer__links">
           <li><a href="/digitales-portal/">Digitales Portal</a></li>
+          <li><a href="/leistungen/">Leistungen</a></li>
           <li><a href="/schadensmeldung/">Schadensfall melden</a></li>
           <li><a href="/kontakt/">Kontakt</a></li>
           <li><a href="/impressum/">Impressum</a></li>
-          <li><a href="/datenschutz/">Datenschutz</a></li>
         </ul>
       </div>
     </div>
-
     <div class="footer__bottom">
-      <p class="footer__copy">© 2024 Wir machen Handwerk. Alle Rechte vorbehalten.</p>
+      <p class="footer__copy">© 2025 Wir machen Handwerk. Alle Rechte vorbehalten.</p>
       <nav class="footer__legal" aria-label="Rechtliche Links">
         <a href="/impressum/">Impressum</a>
         <a href="/datenschutz/">Datenschutz</a>
