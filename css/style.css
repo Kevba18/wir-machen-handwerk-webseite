@@ -917,7 +917,19 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-display); font-weight: 800; line-hei
 .portal-access-icon--dark { background:rgba(255,255,255,0.12); border:1px solid var(--on-dark-border); }
 
 /* =========================================
-   22. IMAGE PLACEHOLDER
+   22. LEGAL CONTENT
+   ========================================= */
+.legal-content { padding:clamp(2rem,4vw,3rem); }
+.legal-content h2 { font-size:clamp(1.55rem,2.4vw,2rem); margin:2.25rem 0 1rem; color:var(--gray-900); }
+.legal-content h2:first-child { margin-top:0; }
+.legal-content h3 { font-size:1.15rem; margin:2rem 0 0.75rem; color:var(--gray-900); }
+.legal-content h4 { font-family:var(--font-body); font-size:1rem; margin:1.5rem 0 0.6rem; color:var(--gray-900); }
+.legal-content p { color:var(--text-mid); line-height:1.78; margin-bottom:1.1rem; }
+.legal-content a { color:var(--blue); font-weight:600; text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:3px; }
+.legal-content__source { margin-top:2rem; padding-top:1.25rem; border-top:1px solid var(--gray-200); font-size:0.92rem; }
+
+/* =========================================
+   23. IMAGE PLACEHOLDER
    ========================================= */
 .img-placeholder { background:var(--gray-100); border-radius:var(--radius-lg); display:flex; flex-direction:column; align-items:center; justify-content:center; color:var(--gray-400); font-size:0.85rem; position:relative; overflow:hidden; border:2px dashed var(--gray-200); }
 .img-placeholder::before { content:''; position:absolute; inset:0; background:repeating-linear-gradient(-45deg, transparent, transparent 12px, rgba(0,0,0,0.02) 12px, rgba(0,0,0,0.02) 24px); }
@@ -926,7 +938,7 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-display); font-weight: 800; line-hei
 .img-placeholder__label code { font-size:0.72rem; background:var(--white); padding:2px 7px; border-radius:4px; }
 
 /* =========================================
-   23. FOOTER
+   24. FOOTER
    ========================================= */
 .footer { position:relative; overflow:hidden; background:var(--gray-900); padding:5rem 0 2rem; }
 .footer::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse 60% 75% at 12% 8%, rgba(26,63,111,0.45) 0%, transparent 68%), linear-gradient(140deg, #091928 0%, #0F172A 72%, #0D2240 100%); }
