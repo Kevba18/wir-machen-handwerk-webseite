@@ -1,7 +1,15 @@
 /* =========================================
    WMH – Design System v2.0 – Premium
    ========================================= */
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+/* =========================================
+   LOCAL FONTS (kein Google-Fonts-Request)
+   ========================================= */
+@font-face { font-family:'Barlow Condensed'; font-style:normal; font-weight:400; font-display:swap; src:url('fonts/barlow-condensed-400.woff2') format('woff2'); }
+@font-face { font-family:'Barlow Condensed'; font-style:normal; font-weight:600; font-display:swap; src:url('fonts/barlow-condensed-600.woff2') format('woff2'); }
+@font-face { font-family:'Barlow Condensed'; font-style:normal; font-weight:700; font-display:swap; src:url('fonts/barlow-condensed-700.woff2') format('woff2'); }
+@font-face { font-family:'Barlow Condensed'; font-style:normal; font-weight:800; font-display:swap; src:url('fonts/barlow-condensed-800.woff2') format('woff2'); }
+@font-face { font-family:'Barlow Condensed'; font-style:normal; font-weight:900; font-display:swap; src:url('fonts/barlow-condensed-900.woff2') format('woff2'); }
+@font-face { font-family:'Inter'; font-style:normal; font-weight:300 700; font-display:swap; src:url('fonts/inter.woff2') format('woff2'); }
 
 /* =========================================
    1. DESIGN TOKENS
@@ -1047,8 +1055,10 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-display); font-weight: 800; line-hei
   .target-grid--4 { grid-template-columns:repeat(2,1fr); }
 }
 @media (max-width:1024px) {
-  .hero__grid           { grid-template-columns:1fr; padding:3rem 0 4rem; }
-  .hero__visual         { display:none; }
+  .hero__grid           { grid-template-columns:1fr; padding:3rem 0 2.5rem; }
+  .hero__visual         { display:flex; height:290px; overflow:hidden; margin-top:1.5rem; justify-content:center; }
+  .portal-window        { zoom:0.62; flex-shrink:0; }
+  .hero__float          { display:none; }
   .hero__sub            { max-width:100%; }
   .target-grid          { grid-template-columns:repeat(2,1fr); }
   .services-grid        { grid-template-columns:repeat(2,1fr); }
@@ -1100,7 +1110,9 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-display); font-weight: 800; line-hei
   .container     { padding:0 1rem; }
   .nav__login    { display:none !important; }
   .hero          { min-height:auto; }
-  .hero__grid    { padding:2.25rem 0 3.25rem; }
+  .hero__grid    { padding:2.25rem 0 2.5rem; }
+  .hero__visual  { height:240px; }
+  .portal-window { zoom:0.50; }
   .hero__trust   { gap:0.75rem 1rem; }
   .hero__trust-item { width:100%; }
   .btn--lg       { width:100%; justify-content:center; white-space:normal; text-align:center; line-height:1.2; }
@@ -1113,4 +1125,46 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-display); font-weight: 800; line-hei
   .process-step::before { transform:translateY(25px); }
   .portal-screenshot-slot { min-height:260px; padding:1.25rem; }
   .portal-screenshot-slot__label { padding:0.75rem 1rem; }
+}
+
+/* ── Cookie Banner ─────────────────────────────────────────────────── */
+.cookie-banner {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 9999;
+  background: #0f1e35;
+  border-top: 2px solid var(--orange);
+  padding: 1rem 0;
+  box-shadow: 0 -4px 32px rgba(0,0,0,0.25);
+  animation: cookieFadeIn 0.35s ease both;
+}
+@keyframes cookieFadeIn {
+  from { transform: translateY(100%); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+.cookie-banner__inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.cookie-banner__text {
+  flex: 1;
+  font-size: 0.875rem;
+  color: var(--on-dark-body);
+  line-height: 1.6;
+  margin: 0;
+  min-width: 200px;
+}
+.cookie-banner__text a {
+  color: var(--orange);
+  text-decoration: underline;
+  white-space: nowrap;
+}
+.cookie-banner__text a:hover { color: #fff; }
+@media (max-width:480px) {
+  .cookie-banner__inner { gap: 1rem; }
+  .cookie-banner__text  { font-size: 0.82rem; }
+  .cookie-banner .btn   { width: 100%; justify-content: center; }
 }

@@ -13,7 +13,7 @@ Diese Punkte sollten vor der finalen Veröffentlichung juristisch und technisch 
 - E-Mail-Versand Anbieter prüfen: Anbieter, Zwecke, Rechtsgrundlage, Auftragsverarbeitung und eventuelle Drittlandübermittlungen klären.
 - Dateiupload Verarbeitung prüfen: öffentliche Website und Portal getrennt prüfen, insbesondere Speicherort, Zugriff, Löschfristen und Berechtigungen.
 - Tracking Tools final prüfen: Im aktuellen öffentlichen Website-Code wurden keine Analyse- oder Marketing-Tracking-Tools gefunden.
-- Google Fonts prüfen: Die öffentliche Website lädt Schriftarten aktuell über `fonts.googleapis.com`; lokale Einbindung oder Datenschutzabschnitt final bewerten.
+- Google Fonts: Schriftarten werden lokal vom Webserver ausgeliefert (erledigt). Keine externe Verbindung zu fonts.googleapis.com. Datenschutzerklärung Abschnitt 8 entsprechend aktualisiert.
 - Cookie und Consent Bedarf final prüfen: insbesondere nach finaler Hosting-/Formular-/Portal-Konfiguration.
 - Portalzugang und Portal-Datenschutzhinweise separat prüfen; keine freie Registrierung behaupten.
 - Datenschutzbezogene Marketing-Aussagen im Website-Content final prüfen und gegebenenfalls weiter präzisieren.

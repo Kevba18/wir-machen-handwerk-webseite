@@ -75,6 +75,34 @@ if ('IntersectionObserver' in window) {
   });
 }
 
+// Dynamisches Copyright-Jahr
+const copyrightEl = document.querySelector('.footer__copy');
+if (copyrightEl) {
+  copyrightEl.textContent = `© ${new Date().getFullYear()} Wir machen Handwerk. Alle Rechte vorbehalten.`;
+}
+
+// Cookie Banner
+(function () {
+  if (localStorage.getItem('wmh-cookie-ok')) return;
+  const banner = document.createElement('div');
+  banner.className = 'cookie-banner';
+  banner.setAttribute('role', 'region');
+  banner.setAttribute('aria-label', 'Cookie-Hinweis');
+  banner.innerHTML =
+    '<div class="cookie-banner__inner">' +
+      '<p class="cookie-banner__text">Diese Website verwendet ausschließlich technisch notwendige Cookies für den Betrieb und die Formularfunktion. ' +
+        '<a href="/datenschutz/">Datenschutzerklärung lesen</a>' +
+      '</p>' +
+      '<button class="btn btn--orange btn--sm" id="cookie-ok">Verstanden</button>' +
+    '</div>';
+  document.body.appendChild(banner);
+  document.getElementById('cookie-ok').addEventListener('click', function () {
+    localStorage.setItem('wmh-cookie-ok', '1');
+    banner.style.animation = 'cookieFadeIn 0.25s ease reverse both';
+    setTimeout(function () { banner.remove(); }, 260);
+  });
+}());
+
 // Dropdown keyboard accessibility
 document.querySelectorAll('.nav__dropdown-toggle').forEach(toggle => {
   toggle.addEventListener('keydown', e => {
