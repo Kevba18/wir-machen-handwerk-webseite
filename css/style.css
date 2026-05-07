@@ -195,15 +195,20 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-display); font-weight: 800; line-hei
 
 .nav__logo {
   display: flex; align-items: center; gap: 0.75rem; flex-shrink: 0;
-  padding: 0.36rem 0.58rem;
-  border-radius: var(--radius);
-  background: rgba(255,255,255,0.94);
-  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+  min-width:min(225px,42vw);
 }
 .nav__logo-icon { width: 40px; height: 40px; }
 .nav__logo-img  { height: 34px; width: auto; }
 .site-logo { display:block; width:auto; object-fit:contain; }
-.site-logo--nav { height:42px; max-width:min(225px,42vw); }
+.site-logo-stack { position:relative; display:block; width:min(225px,42vw); height:42px; }
+.site-logo--nav {
+  position:absolute; inset:0 auto auto 0;
+  height:42px; max-width:min(225px,42vw);
+  transition:opacity var(--transition);
+}
+.site-logo--light-bg { opacity:0; }
+.nav.scrolled .site-logo--dark-bg { opacity:0; }
+.nav.scrolled .site-logo--light-bg { opacity:1; }
 .nav__logo-text { display: flex; flex-direction: column; line-height: 1; }
 .nav__logo-top {
   font-family: var(--font-display); font-size: 0.9rem; font-weight: 900;
